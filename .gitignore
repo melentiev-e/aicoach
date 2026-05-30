@@ -1,0 +1,9 @@
+# Raw API payloads dumped by the fetcher — insurance only, never read by the agent
+/data/raw/
+
+# Secrets for the Node.js fetcher (OAuth tokens, client secrets)
+/scripts/.env
+.env
+
+# Node
+node_modules/

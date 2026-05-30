@@ -1,0 +1,30 @@
+{
+  "id": 22222222222,
+  "start_date_local": "2026-05-27T06:00:00Z",
+  "distance": 14000.0,
+  "moving_time": 3000,
+  "average_speed": 4.6667,
+  "average_heartrate": 165,
+  "max_heartrate": 178,
+  "total_elevation_gain": 20,
+  "type": "Run",
+  "workout_type": 3,
+  "laps": [
+    {
+      "lap_index": 1,
+      "distance": 2000.0,
+      "moving_time": 444,
+      "average_speed": 4.5045,
+      "average_heartrate": 168.2,
+      "max_heartrate": 175
+    },
+    {
+      "lap_index": 2,
+      "distance": 2000.0,
+      "moving_time": 438,
+      "average_speed": 4.5662,
+      "average_heartrate": 171.0,
+      "max_heartrate": 178
+    }
+  ]
+}

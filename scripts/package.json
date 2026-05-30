@@ -1,0 +1,12 @@
+{
+  "name": "aicoach-fetcher",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone fetcher (ADR-0001): pulls from platforms, normalizes, writes /logs/. The coach agent never runs this.",
+  "scripts": {
+    "test": "node --test",
+    "fetch": "node fetch-all.js",
+    "fetch:strava": "node fetch-strava.js"
+  }
+}

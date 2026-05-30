@@ -1,0 +1,10 @@
+{
+  "date": "2026-05-24",
+  "vo2max": 62.5,
+  "marathonShape": 88,
+  "prognosis": { "marathon": "2:41:30", "half": "1:17:05" },
+  "ctl": 72,
+  "atl": 65,
+  "tsb": 7,
+  "threshold": { "pace": "3:38", "hr": 172 }
+}
