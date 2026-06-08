@@ -39,31 +39,31 @@ what happens when the data tests it.
 
 > Source of truth for who is being coached. Update whenever facts change.
 
-- **Name / handle:** [FILL IN]
-- **Age / sex:** [FILL IN]
-- **Goal race & date:** [FILL IN]
+- **Name / handle:** Miller
+- **Age / sex:** 34, male
+- **Goal race & date:** TBC — target November 2026 marathon (working assumption: Nov 1, 2026)
 - **Goal time:** 2:39 marathon  (≈ 3:46/km · 6:04/mile average)
-- **Years running consistently:** [FILL IN]
-- **Highest weekly volume safely handled:** [FILL IN]
-- **Marathon PB / experience (and how the last 10 km felt):** [FILL IN]
-- **Recent best race (date, distance, time, conditions):** [FILL IN]
-- **Current avg weekly volume (last 4–8 wk):** [FILL IN]
-- **Days/week available + constraints (job, sleep, family):** [FILL IN]
-- **Doubles possible? Long-run day?** [FILL IN]
-- **Injury history & current niggles:** [FILL IN]
-- **Strengths / weaknesses (self-read):** [FILL IN]
-- **Facilities (track, hills, treadmill, gym):** [FILL IN]
-- **Climate / altitude:** [FILL IN]
-- **Fueling experience (gels, gut tolerance):** [FILL IN]
+- **Years running consistently:** ~3+ years (data from RUNALYZE from 2023 onward)
+- **Highest weekly volume safely handled:** ~95 km (Nov–Dec 2025, pre-deployment)
+- **Marathon PB / experience (and how the last 10 km felt):** 3:04:53 (Kyiv City Marathon, 2024-10-13); last 10 km feel — TBD (not yet reported)
+- **Recent best race (date, distance, time, conditions):** 10k 34:53 (Kyiv, 2025-06-29); HM 1:15:32 (Kyiv HM, 2025-04-13)
+- **Current avg weekly volume (last 4–8 wk):** ~44 km (4-wk avg incl. rebuild); ~67 km (last 2 wk)
+- **Days/week available + constraints:** 6–7 days; currently in military service (Balakliia area); training time available now
+- **Doubles possible? Long-run day?** Doubles possible if needed; long run on Sunday
+- **Injury history & current niggles:** Shin splints + medial/lateral syndromes 2–3×/year during peaking periods; no current symptoms
+- **Strengths / weaknesses (self-read):** TBD — not yet reported
+- **Facilities (track, hills, treadmill, gym):** Asphalt roads only; no track access
+- **Climate / altitude:** Ukraine (Kharkiv region), near sea level; warm summers
+- **Fueling experience (gels, gut tolerance):** Gels tested and tolerated well in training
 - **Data sources:** Garmin, Strava, RUNALYZE
 
 ### Current fitness snapshot (from RUNALYZE — update each phase)
-- **Effective VO2max (and trend):** [FILL IN]
-- **Marathon Shape %:** [FILL IN]
-- **Race prognosis (predicted M / HM):** [FILL IN]
-- **Form / Fitness / Fatigue (TSB / CTL / ATL):** [FILL IN]
-- **Max HR / Resting HR / Threshold pace & HR:** [FILL IN]
-- **Last updated:** [DATE]
+- **Effective VO2max (and trend):** 52.4 (RUNALYZE) / 57 (Garmin) — Garmin figure more reliable; RUNALYZE suppressed by low marathon shape
+- **Marathon Shape %:** 32% — very low; reflects lack of structured marathon work during military service
+- **Race prognosis (predicted M / HM):** RUNALYZE: 3:58:37 marathon (pessimistic, based on current shape); Garmin: 3:17 marathon / 1:28 HM; true current range ~3:05–3:15
+- **Form / Fitness / Fatigue (TSB / CTL / ATL):** TSB −21, CTL 46%, ATL 43%, A:C 1.32 (building aggressively, at load-risk threshold)
+- **Max HR / Resting HR / Threshold pace & HR:** Max HR ~185 bpm (race data: 183–184); resting HR 40 bpm; LT 3:57/km @ 172 bpm (Garmin)
+- **Last updated:** 2026-06-08
 
 ---
 
@@ -138,13 +138,17 @@ Periodization over ~16–20 weeks:
   athlete's durability — never jump the band to chase the number.
 
 ### Pace zones (derive from current fitness; keep current)
-| Zone | Purpose | Pace (fill from latest fitness) |
-|------|---------|-------------------------------|
-| Easy / Recovery | Aerobic base, recovery | [FILL] |
-| Marathon (MP) | Goal-specific | ~3:46/km |
-| Threshold (T) | Lactate threshold | [FILL ~3:35–3:40/km] |
-| VO2max (I) | Aerobic ceiling | [FILL] |
-| Reps (R) | Speed/economy | [FILL] |
+> Anchored on Garmin LT 3:57/km @ 172 bpm; VO2max 57. Update at each phase review.
+
+| Zone | Purpose | Current pace | Target HR |
+|------|---------|-------------|-----------|
+| Easy / Recovery | Aerobic base, recovery | 5:15–5:50/km | < 148 bpm |
+| Marathon (MP) | Goal-specific | 3:46/km (goal pace; current fitness ~4:10–4:20/km) | ~165–170 at peak fitness |
+| Threshold (T) | Lactate threshold | 3:57–4:07/km | 168–174 bpm |
+| VO2max (I) | Aerobic ceiling | 3:30–3:40/km | 178–185 bpm |
+| Reps (R) | Speed/economy | 3:10–3:20/km | effort-based |
+
+> **Note:** Goal MP (3:46/km) is currently faster than LT (3:57/km). This gap must close over the training block. Do not run goal MP in races or workouts until LT drops to ~3:40/km (expect wk 12–14).
 
 ---
 

@@ -8,5 +8,8 @@
     "test": "node --test",
     "fetch": "node fetch-all.js",
     "fetch:strava": "node fetch-strava.js"
+  },
+  "dependencies": {
+    "@garmin/fitsdk": "^21.205.0"
   }
 }
