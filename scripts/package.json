@@ -7,7 +7,10 @@
   "scripts": {
     "test": "node --test",
     "fetch": "node fetch-all.js",
-    "fetch:strava": "node fetch-strava.js"
+    "fetch:strava": "node fetch-strava.js",
+    "workouts:garmin": "node generate-garmin-workouts.js",
+    "workouts:push": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\push-garmin-workouts-mtp.ps1 -Target Workouts",
+    "workouts:push:newfiles": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\push-garmin-workouts-mtp.ps1 -Target NewFiles"
   },
   "dependencies": {
     "@garmin/fitsdk": "^21.205.0"
