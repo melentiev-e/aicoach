@@ -399,11 +399,10 @@
   'use strict';
 
   // ── Config ──────────────────────────────────────────────
-  const REPO_OWNER = 'yevhenmelentiev';
-  const REPO_NAME = 'AICoach';
-  const BRANCH = 'main';
+  // Plan file lives in the same repo — use a relative path so the app
+  // works on any deployment (GitHub Pages, Netlify, etc.)
   const MD_PATH = 'plan/current-week.md';
-  const RAW_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${BRANCH}/${MD_PATH}`;
+  const RAW_URL = MD_PATH;
 
   // ── State ───────────────────────────────────────────────
   let weekData = null;
@@ -841,7 +840,7 @@
       console.error('Failed to load plan:', err);
       $('#today-loading').innerHTML = `
         <h2>Couldn't load your plan</h2>
-        <p>${err.message}. Make sure the file exists at <code>${MD_PATH}</code> on the <code>${BRANCH}</code> branch.</p>
+        <p>${err.message}. Make sure <code>${MD_PATH}</code> exists in the repo.</p>
         <button class="retry-btn" onclick="location.reload()">Retry</button>`;
     }
   }
