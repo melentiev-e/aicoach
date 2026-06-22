@@ -652,7 +652,10 @@
     };
 
     for (const section of sectionOrder) {
-      const text = weekData.notes[section];
+      // Match by prefix so headings with a parenthetical suffix still render
+      // e.g. "## Shin check (active — tension reported)" → "Shin check"
+      const key = Object.keys(weekData.notes).find(k => k === section || k.startsWith(section));
+      const text = key ? weekData.notes[key] : null;
       if (!text) continue;
 
       html += `
