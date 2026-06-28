@@ -11,21 +11,21 @@ detail to the stakes).
 ## Read first
 - `CLAUDE.md` §3 (goal time, fueling experience, gut tolerance), §5 (pace zones),
   §7 (pre-race).
-- Latest `logs/fitness.csv` (race prognosis — is goal pace currently realistic?).
 - `athlete.md` for fueling history and prior race execution.
 - Any prior `races/<race>-debrief.md` for lessons learned.
 
 ## Steps
 
-1. **Set the target.** Confirm goal pace against the current prognosis. If fitness
-   doesn't support the A-goal, set tiered A/B/C goals honestly.
+1. **Set the target.** Ask the athlete for the latest RUNALYZE prognosis or recent
+   workout performance to confirm what fitness supports. Compare against the §3
+   snapshot. If fitness doesn't support the A-goal, set tiered A/B/C goals honestly.
 
 2. **Segment pacing.** Break the race into segments with target pace/HR per segment,
    accounting for course profile (hills, wind exposure) and a controlled early pace —
    never bank time.
 
-3. **Fueling & hydration schedule.** Gels/carbs per hour and timing, fluid plan, tied to
-   the athlete's tested gut tolerance (§3). Only practiced strategies on race day.
+3. **Fueling & hydration schedule.** Gels/carbs per hour and timing, fluid plan, tied
+   to the athlete's tested gut tolerance (§3). Only practiced strategies on race day.
 
 4. **Weather contingencies.** Adjustments for heat/cold/wind — pace and fueling tweaks
    per scenario.

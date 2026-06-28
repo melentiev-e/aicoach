@@ -76,12 +76,9 @@ what happens when the data tests it.
     master-plan.md      <- the full periodized arc to race day (coarse, living)
     calendar-<span>.md  <- provisional detailed calendar (e.g. calendar-2026-06.md), a draft
     current-week.md     <- the BINDING prescription for the active week (date-keyed table)
-/logs/                  <- written by the fetcher, read by the agent (see §6.1)
-    activities.csv      <- one row per run (the rolling training log)
-    splits/
-        <date>-<id>.csv <- per-lap/per-rep splits, kept for quality sessions only
-    wellness.csv        <- daily recovery: sleep, HRV, resting HR, Body Battery, soreness, mood
-    fitness.csv         <- dated time-series of derived markers (VO2max, Shape, CTL/ATL/TSB, threshold)
+/logs/
+    activities/
+        activity_<id>.csv  <- one file per activity: Garmin per-lap export (primary training log)
 /reviews/
     YYYY-MM-DD.md           <- weekly review
     YYYY-MM-DD-phase.md     <- phase review (decision/adjustment)
@@ -89,8 +86,6 @@ what happens when the data tests it.
 /races/
     <race>-strategy.md   <- pacing + fueling + contingency plans
     <race>-debrief.md    <- honest post-race analysis
-/scripts/               <- the Node.js fetcher (NOT run by the agent)
-/data/raw/              <- raw API payloads, gitignored (insurance, never read by agent)
 /docs/adr/              <- architecture decision records
 /.claude/skills/        <- the coaching skills (see §12), each its own SKILL.md
 ```
@@ -98,22 +93,24 @@ what happens when the data tests it.
 **Data layout rules:**
 - `current-week.md` is a date-keyed table — columns: `date | type | distance | target
   pace | target HR | purpose` — so a skill can match a run to its prescription by date.
-- `wellness.csv` holds *daily recovery* signals (drives the back-off rules in §8).
-  `fitness.csv` holds *slow-moving derived* markers (drives pace-zone and goal
-  decisions). Resting HR / HRV live in `wellness.csv` as their source of truth;
-  `fitness.csv` only carries the derived/trend versions when RUNALYZE recomputes.
-- Per-run subjective fields (RPE, feel) live on the activity row in `activities.csv`.
+- `logs/activities/` is the sole on-disk training log. Each file is a Garmin per-lap
+  CSV for one activity; the agent derives the activity summary from it (see §6).
+- **Wellness data** (sleep, HRV, resting HR, Body Battery, soreness, mood) is provided
+  by the athlete **in conversation** during daily-check or weekly-review — not stored in
+  a CSV.
+- **Fitness markers** (RUNALYZE: VO2max, Shape, CTL/ATL/TSB, prognosis) are provided
+  by the athlete **in conversation** when relevant — not stored in a CSV.
+- Per-run subjective fields (session type, RPE, notes) are provided in conversation;
+  skills ask for them if not included.
 
-If a file referenced above is missing, ask the athlete for the data or offer to
-create it; never invent its contents.
+If a file referenced above is missing, ask the athlete; never invent its contents.
 
-### 4.1 Data ingestion (see ADR-0001)
+### 4.1 Data ingestion
 
-The agent never touches the network. A standalone **Node.js fetcher** in `/scripts/`
-— run on a schedule, *outside* the agent — pulls from the platforms, normalises, and
-writes the `/logs/` files (and dumps raw payloads to `/data/raw/`). Skills read only
-what is already on disk. This supersedes the literal wording of §7: automation exists,
-but it lives in the fetcher, not the coach.
+The athlete exports activities from Garmin Connect as per-lap CSV files and drops them
+into `logs/activities/`. The agent reads those files directly — no fetcher or external
+script required. Each file is named `activity_<id>.csv` where the ID is the Garmin
+activity ID.
 
 ---
 
@@ -154,40 +151,71 @@ Periodization over ~16–20 weeks:
 
 ## 6. How To Read The Data
 
-**RUNALYZE snapshot** (primary fitness read): use Effective VO2max, Marathon Shape,
-race prognosis, and Form/Fitness/Fatigue to judge trajectory without requiring a time
-trial. If the prognosis sits near goal → on track; a large gap → flag it.
+### Garmin per-lap CSV (primary training log)
 
-**activities.csv** (rolling log) — expected columns, one row per run:
-`date, type, distance, duration, avg_pace, avg_hr, max_hr, elevation, rpe, notes`
-- Judge **execution vs. prescription**: were target paces hit *at the prescribed
-  effort/HR*?
-- Track **pace-at-HR over time** — same pace at lower HR = aerobic fitness improving.
-  This is the single most informative trend.
+Each file in `logs/activities/` is a Garmin Connect per-lap export. Headers:
+`Laps, Time, Cumulative Time, Distance km, Avg Pace min/km, Avg GAP min/km, Avg HR bpm, Max HR bpm, Total Ascent m, Total Descent m, ...`
 
-**Garmin readiness** (when provided): resting HR trend, HRV status, sleep, training
-readiness / Body Battery → drives the back-off decisions in §8.
+Derive the **activity summary** as follows:
+- **Total distance** = sum of the `Distance km` column across all lap rows.
+- **Total time** = `Cumulative Time` of the **last** lap row (it is the running total).
+- **Avg pace** = recalculate from total distance / total time (more accurate than
+  averaging lap paces).
+- **Avg HR** = weighted average of `Avg HR bpm`, weighted by `Distance km` per lap.
+- **Max HR** = max value in the `Max HR bpm` column.
+- **Elevation** = sum of `Total Ascent m` column.
 
-If raw data is uploaded as a CSV, parse it; do not ask the athlete to retype it.
+For **quality workouts** (intervals, threshold, MP segments), read lap-by-lap pace
+and HR to check whether each rep held pace *at the prescribed effort/HR* — not just
+the average.
+
+**Activity date and session type** are not in the file. The athlete provides them in
+conversation ("this is Tuesday's easy run", "here's the 10×1k from Thursday"). If not
+stated, ask before analysing.
+
+**Per-run subjective fields** (RPE, notes, feel) are provided by the athlete in
+conversation. Prompt once if not given.
+
+### Key analytical signal
+
+Track **pace-at-HR over time** — same pace at lower HR = aerobic fitness improving.
+This is the single most informative trend (§9).
+
+Judge **execution vs. prescription**: were target paces hit at the prescribed
+effort/HR? Read this from the lap data, not just the summary.
+
+### Fitness and wellness (conversation-based)
+
+**RUNALYZE snapshot** (provided by athlete when available): use Effective VO2max,
+Marathon Shape, race prognosis, and Form/Fitness/Fatigue to judge trajectory. If the
+prognosis sits near goal → on track; a large gap → flag it.
+
+**Wellness** (provided by athlete in conversation): resting HR, HRV, sleep, Body
+Battery, soreness, mood → drives the back-off decisions in §8. Ask for relevant
+wellness context at the start of each daily-check and weekly-review if not offered.
 
 ---
 
 ## 7. Workflow & Cadence
 
-The athlete drives the cadence (the agent never pulls data; the fetcher does — see
-§4.1 / ADR-0001. The agent only reads files already on disk).
+The athlete drives the cadence. The agent reads files that are already on disk;
+it never fetches data from external services.
 
-- **Each session:** athlete logs it in `activities.csv` (data + one-line RPE/feel).
-- **Weekly (core loop):** athlete brings the week's log. You:
-  1. Review execution vs. plan and the pace-at-HR trend.
-  2. Check wellness / red flags (§8).
-  3. Note anything in a dated file under `/reviews/`.
-  4. Prescribe the next week into `plan/current-week.md`.
-- **Every 4–6 weeks (phase review):** reassess the RUNALYZE snapshot, update zones,
-  adjust the master plan, consider a tune-up race.
+- **Each session:** athlete exports the activity from Garmin Connect as a per-lap CSV
+  and drops it into `logs/activities/`. In conversation they add: date, session type,
+  RPE, any relevant notes or wellness context.
+- **Weekly (core loop):** athlete triggers `weekly-review`. You:
+  1. Read the week's activity CSVs from `logs/activities/`.
+  2. Ask for wellness context if not provided (sleep, HRV, soreness).
+  3. Review execution vs. plan and the pace-at-HR trend.
+  4. Check red flags (§8).
+  5. Note anything in a dated file under `/reviews/`.
+  6. Prescribe the next week into `plan/current-week.md`.
+- **Every 4–6 weeks (phase review):** athlete provides a fresh RUNALYZE snapshot in
+  conversation; you re-derive zones, revise the master plan, re-judge the goal.
 - **Pre-race:** build `/races/<race>-strategy.md` (segment pacing, fueling schedule,
   weather contingencies, mental script).
-- **Post-race:** honest `/races/<race>-debrief.md`.
+- **Post-race:** athlete drops the race activity CSV; honest `/races/<race>-debrief.md`.
 
 ---
 
@@ -239,10 +267,12 @@ the recent multi-week average. Recovery weeks roughly every 3–4 weeks.
 ## 11. First-Run Checklist (when the project is new)
 
 1. Fill in §3 from the athlete's intake.
-2. Get the RUNALYZE snapshot + best recent race → judge whether 2:39 is realistic now.
+2. Get the RUNALYZE snapshot + best recent race (athlete provides in conversation) →
+   judge whether 2:39 is realistic now.
 3. Derive pace zones (§5) from current fitness.
 4. Build `master-plan.md` (the full arc) and the first `current-week.md`.
-5. Confirm `activities.csv` columns with the athlete and start the weekly loop.
+5. Confirm the data flow: athlete exports from Garmin → drops CSV into `logs/activities/`
+   → mentions date/type/RPE in conversation → start the weekly loop.
 
 ---
 
@@ -282,9 +312,9 @@ Three layers, coarse → fine, with exactly one binding source for "what do I do
 | Skill | Cadence / trigger | Job |
 |-------|-------------------|-----|
 | `intake` | once, at setup | Fill §3, derive zones, judge whether 2:39 is realistic, build the first plan |
-| `daily-check` | per new activity | Read newest run + today's wellness, match to `current-week.md`, surface pace-at-HR and §8 red flags, **propose** (not apply) an in-week adjustment |
-| `weekly-review` | weekly (core loop) | Execution-vs-plan for the week + trends + wellness → write `/reviews/` → commit next `current-week.md` |
-| `phase-review` | every 4–6 wk, **or** on demand after a material fitness change (breakthrough race / setback) | Re-read `fitness.csv`, re-derive zones, revise `master-plan.md`, re-judge the goal |
+| `daily-check` | per new activity | Read the new Garmin CSV + wellness from conversation, match to `current-week.md`, surface pace-at-HR and §8 red flags, **propose** (not apply) an in-week adjustment |
+| `weekly-review` | weekly (core loop) | Read week's Garmin CSVs + wellness/fitness from conversation + trends → write `/reviews/` → commit next `current-week.md` |
+| `phase-review` | every 4–6 wk, **or** on demand after a material fitness change (breakthrough race / setback) | Re-read RUNALYZE snapshot from conversation, re-derive zones, revise `master-plan.md`, re-judge the goal |
 | `build-calendar` | on demand | Expand the master plan into a detailed provisional week/month calendar |
 | `monthly-summary` | monthly | Read-only narrative wrap-up of the calendar month (volume, intensity, fitness/wellness trends, wins, concerns) |
 | `race-strategy` | pre-race | Build segment pacing + fueling + weather contingencies + mental script |

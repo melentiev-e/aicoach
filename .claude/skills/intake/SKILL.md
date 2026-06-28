@@ -17,10 +17,10 @@ weekly loop takes over.
    in `CLAUDE.md` §3, plus `athlete.md` (expanded profile + history). Do not invent
    values — ask. Convert any relative dates to absolute.
 
-2. **Establish the current fitness snapshot.** Pull the latest `fitness.csv` row (the
-   fetcher should have written it from RUNALYZE). If it's empty, ask the athlete to
-   run the fetcher first, or to paste a RUNALYZE snapshot. Record VO2max, Marathon
-   Shape, race prognosis, CTL/ATL/TSB, max/resting HR, threshold pace & HR.
+2. **Establish the current fitness snapshot.** Ask the athlete to provide a RUNALYZE
+   snapshot (or paste their numbers): Effective VO2max, Marathon Shape %, race
+   prognosis (M and HM), CTL/ATL/TSB, max/resting HR, threshold pace & HR. Also ask
+   for Garmin VO2max and LT pace if available. Record these in `CLAUDE.md` §3.
 
 3. **Judge the goal honestly.** Compare the RUNALYZE race prognosis + best recent race
    against the 2:39 target on the available timeline (§8 "adjust the goal"). If there's
@@ -39,8 +39,12 @@ weekly loop takes over.
    then commit `plan/current-week.md` (date-keyed table: date | type | distance |
    target pace | target HR | purpose).
 
-7. **Confirm the data contract.** Verify `activities.csv` columns with the athlete and
-   confirm the fetcher is running. Then start the weekly loop.
+7. **Confirm the data flow.** Explain to the athlete:
+   - After each run: export the activity from Garmin Connect as a per-lap CSV and drop
+     it into `logs/activities/`.
+   - When triggering a daily-check or weekly-review: mention the activity filename(s),
+     the date(s) they occurred, session type, RPE, and any wellness context (sleep, HRV,
+     soreness). No CSV to fill — just tell the coach in conversation.
 
 ## May write
 `athlete.md`, §3 + pace zones in `CLAUDE.md`, the first `plan/master-plan.md`.

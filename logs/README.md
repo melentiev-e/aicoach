@@ -1,73 +1,65 @@
 # `logs/` — data contract
 
-These files are **written by the Node.js fetcher** (`/scripts/`) and **read by the
-skills**. The agent never writes them except where a skill's "May write" clause says so.
-Changing a column means updating both the fetcher and the skills that read it.
+The primary training log lives in `logs/activities/` as individual Garmin per-lap CSV
+exports, one file per activity. The agent reads these files directly; there is no
+aggregated CSV to maintain.
 
-**Conventions (all files):**
-- `date` — `YYYY-MM-DD` (the activity's / day's local date).
-- Distances in **kilometres** (decimal, e.g. `21.1`).
-- Durations as `HH:MM:SS` (or `MM:SS` under an hour).
-- Paces as `MM:SS` **per km** (e.g. `3:46`).
-- Heart rates in **bpm** (integer).
-- Empty cell = no data for that field (don't write `0`).
+**Wellness and fitness markers** (sleep, HRV, resting HR, RUNALYZE snapshot,
+CTL/ATL/TSB) are provided by the athlete in conversation, not stored on disk.
 
 ---
 
-## `activities.csv` — one row per run (rolling training log)
+## `activities/` — Garmin per-lap CSV exports
 
-| column | meaning |
+### How to add an activity
+1. Open Garmin Connect → the activity page.
+2. Export as CSV (the "Splits" or "Laps" export that gives per-lap data).
+3. Drop the file into `logs/activities/`. The filename as exported by Garmin
+   (`activity_<id>.csv`) is fine — no renaming needed.
+
+### File format
+
+Garmin exports per-lap data with the following key columns (among others):
+
+| Column | Meaning |
 |--------|---------|
-| `activity_id` | stable platform id; links to `splits/<date>-<activity_id>.csv` |
-| `date` | run date |
-| `type` | session type (Easy, Long, Threshold, MP, VO2max, Reps, Recovery, Race) |
-| `distance` | km |
-| `duration` | moving/elapsed time |
-| `avg_pace` | min/km |
-| `avg_hr` | bpm |
-| `max_hr` | bpm |
-| `elevation` | total ascent, metres |
-| `rpe` | athlete's effort 1–10 (subjective, per-run) |
-| `notes` | one-line feel / context |
+| `Laps` | Lap number |
+| `Time` | Lap duration (MM:SS.S) |
+| `Cumulative Time` | Elapsed time to end of lap (HH:MM:SS or MM:SS) |
+| `Distance km` | Lap distance in kilometres |
+| `Avg Pace min/km` | Average pace for the lap |
+| `Avg GAP min/km` | Grade-adjusted pace |
+| `Avg HR bpm` | Average heart rate |
+| `Max HR bpm` | Max heart rate |
+| `Total Ascent m` | Elevation gain for the lap |
+| `Total Descent m` | Elevation loss for the lap |
+| `Avg Run Cadence spm` | Steps per minute |
+| `Avg Stride Length m` | Stride length |
+| `Avg Vertical Oscillation cm` | Vertical oscillation |
+| `Avg Ground Contact Time ms` | Ground contact time |
 
-## `wellness.csv` — daily recovery (drives §8 back-off rules)
+### Deriving the activity summary
 
-| column | meaning |
-|--------|---------|
-| `date` | day |
-| `sleep_h` | hours slept (decimal) |
-| `hrv` | overnight HRV (ms) |
-| `rest_hr` | resting HR (bpm) — **source of truth lives here** |
-| `body_battery` | Garmin Body Battery / readiness (0–100) |
-| `soreness` | subjective 1–5 |
-| `mood` | subjective 1–5 |
+The agent computes the following from the lap rows:
 
-## `fitness.csv` — derived trajectory (drives pace/goal decisions)
+| Metric | How to compute |
+|--------|---------------|
+| Total distance | Sum of `Distance km` across all lap rows |
+| Total time | `Cumulative Time` of the **last** lap row |
+| Avg pace | Recalculate: total time ÷ total distance (more accurate than averaging laps) |
+| Avg HR | Weighted average of `Avg HR bpm`, weighted by `Distance km` per lap |
+| Max HR | Maximum value in the `Max HR bpm` column |
+| Elevation gain | Sum of `Total Ascent m` |
 
-Append a row only when RUNALYZE **recomputes** these markers — not every day.
+For **quality sessions** (intervals, threshold, MP segments), the agent reads each
+lap row individually to check whether reps held target pace and HR — not just the
+summary.
 
-| column | meaning |
-|--------|---------|
-| `date` | snapshot date |
-| `vo2max` | RUNALYZE Effective VO2max |
-| `marathon_shape` | Marathon Shape % |
-| `prognosis_marathon` | predicted marathon time `HH:MM:SS` |
-| `prognosis_half` | predicted half time `HH:MM:SS` |
-| `ctl` | Fitness (chronic training load) |
-| `atl` | Fatigue (acute training load) |
-| `tsb` | Form (training stress balance) |
-| `threshold_pace` | derived LT pace, min/km |
-| `threshold_hr` | derived LT HR, bpm |
+### What the file does NOT contain
 
-## `splits/<date>-<activity_id>.csv` — per-lap detail (quality sessions only)
+The following must be provided by the athlete in conversation:
 
-One file per quality workout; see `splits/_TEMPLATE.csv` for the header.
-
-| column | meaning |
-|--------|---------|
-| `lap` | lap/rep number |
-| `distance` | km |
-| `duration` | lap time |
-| `avg_pace` | min/km |
-| `avg_hr` | bpm |
-| `max_hr` | bpm |
+- **Activity date** — say "this is Tuesday's run" or "activity_23398890306 = 2026-06-28"
+- **Session type** — Easy, Threshold, Long, VO2max, Reps, Race, Recovery
+- **RPE** — subjective effort 1–10
+- **Notes** — feel, context, niggles, conditions
