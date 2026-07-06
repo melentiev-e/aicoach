@@ -58,12 +58,12 @@ what happens when the data tests it.
 - **Data sources:** Garmin, Strava, RUNALYZE
 
 ### Current fitness snapshot (from RUNALYZE — update each phase)
-- **Effective VO2max (and trend):** 52.4 (RUNALYZE) / 57 (Garmin) — Garmin figure more reliable; RUNALYZE suppressed by low marathon shape
-- **Marathon Shape %:** 32% — very low; reflects lack of structured marathon work during military service
-- **Race prognosis (predicted M / HM):** RUNALYZE: 3:58:37 marathon (pessimistic, based on current shape); Garmin: 3:17 marathon / 1:28 HM; true current range ~3:05–3:15
-- **Form / Fitness / Fatigue (TSB / CTL / ATL):** TSB −21, CTL 46%, ATL 43%, A:C 1.32 (building aggressively, at load-risk threshold)
-- **Max HR / Resting HR / Threshold pace & HR:** Max HR ~185 bpm (race data: 183–184); resting HR 40 bpm; LT 3:57/km @ 172 bpm (Garmin)
-- **Last updated:** 2026-06-08
+- **Effective VO2max (and trend):** 58.03 (RUNALYZE) / 61 (Garmin) — up from 52.4 / 57 at Jun 8; clear upward trend after 4 weeks structured training
+- **Marathon Shape %:** 30% — low but expected; no MP work in Phase 1; will build from Phase 3 onward
+- **Race prognosis (predicted M / HM):** Current fitness (LT 3:38, VO2max 61, shape-limited): ~2:45–2:55; once marathon shape reaches 60%+: 2:39–2:43 is the target band
+- **Form / Fitness / Fatigue (TSB / CTL / ATL):** TSB +9, CTL 53%, ATL 33%, A:C 0.88 (well-recovered after deload; optimal load range entering Week 5)
+- **Max HR / Resting HR / Threshold pace & HR:** Max HR ~185 bpm; resting HR 40 bpm; LT 3:38/km @ 171 bpm (Garmin, updated Jul 6)
+- **Last updated:** 2026-07-06
 
 ---
 
@@ -135,17 +135,17 @@ Periodization over ~16–20 weeks:
   athlete's durability — never jump the band to chase the number.
 
 ### Pace zones (derive from current fitness; keep current)
-> Anchored on Garmin LT 3:57/km @ 172 bpm; VO2max 57. Update at each phase review.
+> Anchored on Garmin LT 3:38/km @ 171 bpm; VO2max 61. Updated 2026-07-06 (Phase 1 review). Previous: LT 3:57/km, VO2max 57 (Jun 8).
 
 | Zone | Purpose | Current pace | Target HR |
 |------|---------|-------------|-----------|
-| Easy / Recovery | Aerobic base, recovery | 5:15–5:50/km | < 148 bpm |
-| Marathon (MP) | Goal-specific | 3:46/km (goal pace; current fitness ~4:10–4:20/km) | ~165–170 at peak fitness |
-| Threshold (T) | Lactate threshold | 3:57–4:07/km | 168–174 bpm |
-| VO2max (I) | Aerobic ceiling | 3:30–3:40/km | 178–185 bpm |
-| Reps (R) | Speed/economy | 3:10–3:20/km | effort-based |
+| Easy / Recovery | Aerobic base, recovery | 4:30–4:55/km | < 148 bpm |
+| Marathon (MP) | Goal-specific | 3:46/km (goal); current fitness ~3:52–4:00/km | ~162–168 current; ~165–170 at peak fitness |
+| Threshold (T) | Lactate threshold | 3:38–3:52/km | 165–174 bpm |
+| VO2max (I) | Aerobic ceiling | 3:20–3:32/km | 178–185 bpm |
+| Reps (R) | Speed/economy | 3:02–3:15/km | effort-based |
 
-> **Note:** Goal MP (3:46/km) is currently faster than LT (3:57/km). This gap must close over the training block. Do not run goal MP in races or workouts until LT drops to ~3:40/km (expect wk 12–14).
+> **Note (updated Jul 6):** Goal MP (3:46/km) is now ~8 sec/km SLOWER than current LT (3:38/km). The LT-to-MP gap is effectively closed ahead of schedule (was targeted for wk 12–14). The remaining gap to 2:39 is marathon-specific endurance — marathon shape must grow from 30% to 65%+. MP work introduced in Phase 3 from wk 11 as planned.
 
 ---
 

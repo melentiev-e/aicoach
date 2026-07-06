@@ -13,8 +13,8 @@
 | Goal | 2:39:00 (3:46/km) |
 | Race date (working) | 2026-11-01 |
 | Weeks available | 20.5 |
-| Current LT | 3:57/km @ 172 bpm |
-| LT needed for 2:39 | ~3:35/km |
+| Current LT | 3:38/km @ 171 bpm (Garmin, updated Jul 6) |
+| LT needed for 2:39 | ~3:32–3:35/km |
 | Current marathon shape | 32% |
 | Peak volume (historical) | 95 km/wk |
 | Peak volume (this plan) | 100–105 km/wk |
@@ -60,8 +60,9 @@ Numbers are targets, not mandates. Gate every non-recovery increase through a sh
 - Add 6×100m strides 2× per week (attached to easy runs)
 
 **Key milestones:**
-- By wk 6: running 3×3 km at 4:05/km comfortably; LT should trend toward 3:50–3:52/km
-- Long run progresses from 21 → 24 km
+- ~~By wk 6: 3×3 km @ 4:05/km; LT → 3:50–3:52/km~~ → **EXCEEDED at Wk 4:** threshold 3×3k @ 3:55–3:59/km; Garmin LT 3:38/km as of Jul 6
+- Revised Wk 5–6 target: 4×3 km @ 3:45–3:52/km; LT hold at 3:35–3:40/km; shin-free
+- Long run progresses 21 → 22 (Wk 5) → 24 km (Wk 6)
 
 **Injury-prevention protocol (start immediately):**
 - 3× per week: calf raises (3×20 single-leg eccentric), tibialis anterior raises
@@ -84,8 +85,8 @@ Numbers are targets, not mandates. Gate every non-recovery increase through a sh
 - 1 × Long run (24–28 km easy, or last 5 km at MP effort)
 
 **Key milestones:**
-- By wk 10: 5×2 km cruise intervals at 3:50–3:55/km with reasonable HR (< 174); LT approaching 3:42–3:48/km
-- First progression long run with MP feel final km
+- By wk 10: 5×2 km cruise intervals at 3:38–3:44/km (true LT effort) with HR < 174; LT target → 3:30–3:35/km
+- First progression long run with MP feel final 5 km (target MP ~3:52–3:58/km at wk 8 fitness; approach 3:46 by wk 14)
 
 **Recovery week (Wk 8, Aug 2–8):**
 - Volume ~72 km; single quality session; long run 22 km
@@ -150,11 +151,12 @@ Numbers are targets, not mandates. Gate every non-recovery increase through a sh
 
 | Checkpoint | Date | Trigger |
 |------------|------|---------|
-| Phase review 1 | ~2026-07-20 | End of base phase; re-derive zones from LT test or best tempo |
+| Phase review 1 | 2026-07-06 ✓ | Done (early); LT 3:38/km confirmed; zones updated |
+| Phase review 1b | ~2026-07-20 | End of Phase 1 wk 6; confirm LT hold after build week; minor zone check |
 | Phase review 2 | ~2026-08-17 | End of strength phase; check marathon shape %, update prognosis |
 | Phase review 3 | ~2026-10-05 | End of specific phase; go / no-go on 2:39 vs 2:43 pacing strategy |
 
-**Downgrade trigger:** If after phase 2, Garmin marathon prognosis is still > 3:05 or LT has not moved below 3:48/km, revise race target to 2:43–2:45 and adjust MP work accordingly.
+**Downgrade trigger (updated Jul 6):** LT already at 3:38/km — original trigger (3:48/km) cleared. New: if after Phase 2 (wk 10, Aug 16), Garmin LT has not moved below 3:32/km OR marathon shape < 45%, revise race target to 2:43–2:45.
 
 ---
 
