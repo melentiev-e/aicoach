@@ -76,6 +76,13 @@
 - **RUNALYZE Effective VO2max:** 52.4 (suppressed by low marathon shape)
 - **Weight:** 80 kg
 
+### Field lactate (first direct data — 2026-07-10 threshold session)
+- Session: 4×3k @ 3:47–3:51/km, HR 154–162. **Lactate: 5.3 mmol after rep 1 → 6.1 after rep 4** (delta only +0.8 = quasi-steady state).
+- **Interpretation:** He was riding right at MLSS/threshold, not below it. The small +0.8 drift = near-steady; had he been well above MLSS, lactate would have climbed steeply.
+- **Two implications (same direction):** (1) his personal lactate curve appears shifted right — threshold at a higher absolute mmol than the 4.0 default; (2) the **Garmin LT (3:38/km @ 171 bpm) likely overestimates true MLSS pace** — 3:47–3:51 already produced 5–6 mmol, and HR (154–162) under-represented the metabolic cost. Trust lactate + pace over Garmin LT HR for threshold prescriptions.
+- **Goal reality check:** goal MP (3:46/km) currently sits AT/above threshold → not yet marathon-sustainable (consistent with marathon shape ~30%); the block's job is pushing the curve right — same paces at lower lactate.
+- **Status: provisional (single field reading).** Confirm with a proper lactate step-test at the next phase-review and reset zones from the curve. Re-measuring rep 1 vs rep 5 on the 2026-07-16 threshold to check repeatability.
+
 ---
 
 ## Injury History
