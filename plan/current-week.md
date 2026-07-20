@@ -1,86 +1,51 @@
-# Current Week — Jul 14–20, 2026 (Week 6 of Plan — Base Build, final base week)
+# Current Week — Jul 21–27, 2026 (Week 7 — Phase 2 Entry: Strength & Threshold)
 
 > **Binding prescription.** Only `weekly-review` may overwrite this.
-> Phase: Base / Aerobic — Week 6 of 6 (last base week before Strength/Hills block)
-> Committed: 2026-07-13
+> Phase: Strength / Threshold — Week 7 of 20 (Phase 2, Week 1).
+> Committed: 2026-07-20 (Updated per athlete request: full Phase 2 load, no lactate measurement required).
 
 ## Context going in
 
-- Week 5 (rebuild): ~83.1 км, всі сесії виконані, стайдери 6/6. Threshold 4×3k @
-  3:47–3:51/км при avg HR 154–162.
-- **Лактат Wk5 threshold: 5.3 (після репа 1) → 6.1 (після репа 4).** Приріст лише +0.8 —
-  quasi-steady state = біг **на порозі (MLSS)**, а не вище. Але абсолют 5–6 ммоль вищий за
-  «підручникові» 4 → або особистий поріг лежить вище, або Garmin LT (3:38/км @ 171) завищує
-  реальний поріг. ЧСС 154–162 **недооцінювала** метаболічну ціну (HR запізнювався).
-  Висновок: 3:47–3:51/км — це вже threshold, не «легкий запас». Тому цього тижня 5-й реп
-  додаємо на ТОМУ Ж темпі, НЕ швидше, і перевіряємо лактат ще раз.
-- Long run 22.75 км @ 4:40 при avg HR 135, cap <155 тримався до кінця (drift +11 bpm).
-- **Наскрізна тема: easy темп занадто швидкий** (4:22–4:27 замість 4:35–4:55). ЧСС
-  слухняна, шкоди немає — але перед Strength-блоком легкі дні мають бути справді легкими.
-- Гомілки: без симптомів (Wk5). Wellness формально не звітувалось — прошу дати цього тижня.
-- **Четвер зайнятий з ранку до ночі** → темпове перенесено на **середу**; четвер =
-  коротке легке після роботи (заодно відновлення після середового quality).
+- **Athlete state:** Rested well on Monday; entering Phase 2 with full volume (88 km) and 2 quality sessions. Saving lactate strips for future phase checkpoints.
+- **Threshold Calibration (from Wk6 data):** Wed threshold reps anchored strictly at **3:50–3:53/km** (not 3:44–3:48). Wk6 showed 3:44–3:48 is 13.4 mmol runaway (over MLSS). Target HR: avg ≤ 165, max ≤ 170. RPE 7–7.5/10 ("comfortably hard").
+- **Phase 2 Structure:** Introduces a second quality session (Friday Hill Repeats: 8×200m hills for power/economy without heavy metabolic debt) and builds volume to 88 km.
+- **Easy Running Guardrail:** Keep easy runs strictly easy (4:40–5:00/km, HR < 148) so the body absorbs two quality sessions.
+- **Phase-review pending:** Athlete will bring fresh RUNALYZE snapshot for full zone recalculation and 2:39 prognosis update.
 
 ## Weekly prescription
 
 | Date | Type | Distance | Target pace | Target HR | Purpose |
 |------|------|----------|-------------|-----------|---------|
-| 2026-07-14 Mon | Rest | 0 км | — | — | Recovery після long run |
-| 2026-07-15 Tue | Easy | 12 км | **4:35–4:55/км (тримай чесно легко)** | < 148 | Aerobic base |
-| 2026-07-16 Wed | Threshold | ~19 км | 2 км WU + **5×3 км @ 3:47–3:52/км** (3 хв jog) + 2 км CD · **зміряй лактат після репа 1 і репа 5** | avg ≤ 166, max ≤ 172 | +5-й реп на ТОМУ Ж темпі (НЕ швидше); лактат Wk5 5.3→6.1 = вже на порозі (MLSS) |
-| 2026-07-17 Thu | Easy (short) | 6 км | 4:45–5:05/км | < 145 | Коротке легке після роботи; відновлення після середового threshold |
-| 2026-07-18 Fri | Easy | 10 км | 4:35–4:55/км | < 148 | Aerobic base |
-| 2026-07-19 Sat | Easy + strides | 10 км | 4:35–4:55/км + 6×100м @ 3:15–3:25/км | < 148 | Aerobic + нейром'язовий стимул |
-| 2026-07-20 Sun | Long run | 24 км | **4:45–5:05/км** | < 155 | Progression long run (+2 км vs Wk5); рівномірно, без MP |
+| 2026-07-21 Mon | Rest | 0 km | — | — | Complete recovery |
+| 2026-07-22 Tue | Easy | 12 km | **4:40–5:00/km** | < 148 | Aerobic base building |
+| 2026-07-23 Wed | Threshold | ~17 km | 2 km WU + **4×3 km @ 3:50–3:53/km** (3 min jog recovery) + 2 km CD | avg ≤ 165, max ≤ 170 | **Lactate threshold MLSS stimulus.** No strips — govern by pace (3:50–3:53), HR ceiling (170), & RPE (7.5) |
+| 2026-07-24 Thu | Easy | 10 km | **4:40–5:00/km** | < 148 | Recovery & aerobic filler between quality days |
+| 2026-07-25 Fri | Quality #2 (Hills) | ~14 km | 3 km WU + **8×200m Hill Repeats** (~8–10% grade, strong effort / slow jog down) + 3 km CD + easy fill | Effort-based (max ~175 on hills) | **Neuromuscular power, running economy, and hill strength** without lactate debt |
+| 2026-07-26 Sat | Easy + Strides | 11 km | **4:40–5:00/km** + **6×100m strides** | < 148 | Aerobic base + neuromuscular leg speed |
+| 2026-07-27 Sun | Long Run | 24 km | **4:45–5:05/km** (optional: final 3 km @ 3:55/km MP feel if legs feel great) | < 155 (MP < 165) | Aerobic endurance & marathon durability |
 
-**Тиждень total: ~82 км**
+**Weekly Total: ~88 km** (Phase 2 step-up)
 
 ---
 
 ## Session notes
 
-**Загальне:** Останній тиждень базового блоку. Обсяг тримаємо (~82 км, як Wk5); прогрес —
-у якості (5-й threshold-реп) і довгому (22→24 км). Наступний тиждень — перехід у
-Strength/Hills. **Головне завдання тижня — легкі дні справді легкі.** Wk5 усі easy бігли
-на 4:22–4:27; цього тижня свідомо тримай 4:35–4:50. ЧСС-ліміти залишаються єдиним
-authoritative guardrail.
+1. **Wednesday Threshold (4×3 km @ 3:50–3:53):**
+   - **No lactate strips needed.** We know your numbers now: pace + HR + RPE govern the session.
+   - Strictly control the pace: **3:50–3:53/km** (do not speed up to 3:45).
+   - Guardrail: Max HR ≤ 170. If HR approaches 172+, back off slightly.
+   - RPE target: 7–7.5/10 ("comfortably hard, could hold ~1 hour"). If it feels like an 8.5/10 ("running on inertia"), slow down.
 
-**Wednesday threshold (5×3 km @ 3:47–3:52/км) — перенесено з четверга:**
-- **Лактат керує цією сесією, не HR.** Wk5: 5.3→6.1 ммоль (приріст +0.8) = ти був рівно на
-  порозі. Мета цього тижня — БІЛЬШЕ часу на порозі (5-й реп), а НЕ швидше. Пришвидшення
-  зіб'є quasi-steady state у накопичення.
-- Стратегія: реп 1 → 3:50–3:52 (controlled entry); репи 2–5 → 3:47–3:50. Тримай, не женись.
-- **Зміряй лактат після репа 1 і репа 5.** Читання: якщо реп 5 ≈ 5–6.5 → ідеально, ти
-  втримав поріг; якщо реп 5 стрибає ≥8 → темп зависокий, наступного разу сповільнюємо репи.
-- **HR guardrail (вторинний): avg ≤ 166, max ≤ 172** — приблизно там, де ти реально був Wk5.
-  НЕ дай HR повзти до 170+, бо це означатиме, що ти вже сильно над порогом.
-- Якщо ноги важкі → лишись на 4×3k @ 3:48–3:52; повідом до старту.
+2. **Friday Hill Repeats (8×200m):**
+   - Find a steady ~8–10% gradient. Focus on strong knee drive, upright posture, and quick turnover.
+   - Walk/jog down slowly for full recovery between reps. This is for strength & form, not metabolic exhaustion.
 
-**Thursday (коротке легке 6 км, після роботи):**
-- Ти зайнятий з раннього ранку до пізнього вечора — це заповнювальний легкий біг,
-  не обов'язковий за будь-яку ціну. Якщо повернешся розбитий/пізно — **пропусти без
-  докорів сумління**, тиждень від цього не постраждає.
-- Якщо біжиш — тримай справді легко (4:45–5:05, HR < 145). Це також відновлення після
-  середового threshold.
+3. **Easy Runs (Tue 12k, Thu 10k, Sat 11k):**
+   - Honor the pace range (4:40–5:00/km) and keep HR under 148 bpm. Running easy runs too fast steals recovery from your hard sessions.
 
-**Sunday long run (24 km):**
-- +2 км vs минулого тижня. Рівномірний, без прогресій і MP-секцій.
-- Мета — HR < 155 на всій дистанції, включно з останніми 5 км. Wk5 drift був +11 bpm —
-  добре; тримай так само.
-- Темп 4:45–5:05 — свідомо повільніше за Wk5 (там 4:40). Якщо спекотно — ще на 10–15 с/км
-  повільніше; HR cap не змінюється.
+4. **Sunday Long Run (24 km):**
+   - Keep 21 km steady at 4:45–5:05/km (HR < 155). If you feel bouncy in the last 3 km, you may pick up pace to ~3:55/km (MP feel), but keep HR < 165.
 
-**Strides (субота):**
-- 6×100м після easy; прискорення 60м, тримати 100м @ 3:15–3:25/км, сповільнення 60м.
-- Повне відновлення між (90–120 сек ходьби). Wk5 виконані 6/6 — тримай так само.
-
-**Гомілки / strength:**
-- Strength 2× (Вт/Сб рекомендовано, щоб не вантажити ноги перед середовим threshold):
-  - Single-leg calf raises: 3×20 (3 сек ексцентрично вниз)
-  - Tibialis anterior raises: 3×20
-  - Single-leg deadlift: 3×10 кожна
-- При будь-якій болючості > 2/10 → повідом до середи.
-
-**Wellness:** дай цього тижня RHR / HRV / сон / стан гомілок — Wk5 не звітувалось. Якщо
-щось із §8 спрацює (підвищений RHR, падіння HRV, стос поганого сну, біль що змінює біг) —
-повідом, відкоригуємо (найімовірніше — вкоротимо середове threshold).
+5. **Shin / Strength Protocol:**
+   - 2× per week (Tue/Sat): Single-leg calf raises 3×20 + Tibialis raises 3×20.
+   - Any shin soreness > 2/10 → flag immediately and cut Friday quality to easy running.
