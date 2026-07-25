@@ -1,4 +1,4 @@
-# Current Week — Jul 21–27, 2026 (Week 7 — Phase 2 Entry: Strength & Threshold)
+# Current Week — Jul 20–26, 2026 (Week 7 — Phase 2 Entry: Strength & Threshold)
 
 > **Binding prescription.** Only `weekly-review` may overwrite this.
 > Phase: Strength / Threshold — Week 7 of 20 (Phase 2, Week 1).
@@ -16,17 +16,22 @@
 
 | Date | Type | Distance | Target pace | Target HR | Purpose |
 |------|------|----------|-------------|-----------|---------|
-| 2026-07-21 Mon | Rest | 0 km | — | — | Complete recovery |
-| 2026-07-22 Tue | Easy | 12 km | **4:40–5:00/km** | < 148 | Aerobic base building |
-| 2026-07-23 Wed | Threshold | ~17 km | 2 km WU + **4×3 km @ 3:50–3:53/km** (3 min jog recovery) + 2 km CD | avg ≤ 165, max ≤ 170 | **Lactate threshold MLSS stimulus.** No strips — govern by pace (3:50–3:53), HR ceiling (170), & RPE (7.5) |
-| 2026-07-24 Thu | Easy | 10 km | **4:40–5:00/km** | < 148 | Recovery & aerobic filler between quality days |
-| 2026-07-25 Fri | Quality #2 (Hills) | ~14 km | 3 km WU + **8×200m Hill Repeats** (~8–10% grade, strong effort / slow jog down) + 3 km CD + easy fill | Effort-based (max ~175 on hills) | **Neuromuscular power, running economy, and hill strength** without lactate debt |
-| 2026-07-26 Sat | Easy + Strides | 11 km | **4:40–5:00/km** + **6×100m strides** | < 148 | Aerobic base + neuromuscular leg speed |
-| 2026-07-27 Sun | Long Run | 24 km | **4:45–5:05/km** (optional: final 3 km @ 3:55/km MP feel if legs feel great) | < 155 (MP < 165) | Aerobic endurance & marathon durability |
+| 2026-07-20 Mon | Rest | 0 km | — | — | Complete recovery |
+| 2026-07-21 Tue | Easy | 12 km | **4:40–5:00/km** | < 148 | Aerobic base building |
+| 2026-07-22 Wed | ~~Threshold~~ **REST (GI)** | 0 km | — | — | **Skipped — GI upset (abdominal cramps + mild diarrhea, no fever).** Coach call: no quality work while gut is irritated. Threshold → moved to Fri if recovered. |
+| 2026-07-23 Thu | Easy (gut test) → or Threshold | 10 km / ~17 km | **4:40–5:00/km** *(if gut still settling)* | < 148 | Recovery test after GI day — see log for decision fork |
+| 2026-07-24 Fri | ~~Hills~~ **Threshold (moved)** | ~17 km | 2 km WU + **4×3 km @ 3:50–3:53/km** (3 min jog recovery) + 2 km CD | avg ≤ 165, max ≤ 170 | **Lactate threshold MLSS stimulus** — displaced from Wed by GI. Hills dropped this week to protect recovery. |
+| 2026-07-25 Sat | Easy + Strides | 11 km | **4:40–5:00/km** + **6×100m strides** | < 148 | Aerobic base + neuromuscular leg speed |
+| 2026-07-26 Sun | Long Run | 24 km | **4:45–5:05/km** (optional: final 3 km @ 3:55/km MP feel if legs feel great) | < 155 (MP < 165) | Aerobic endurance & marathon durability |
 
-**Weekly Total: ~88 km** (Phase 2 step-up)
+**Weekly Total: ~74 km** (planned 88; −14 km from Wed GI rest day + hills dropped). Below the Phase 2 band (85–95) by design — illness override, Week 7. Threshold + long run preserved.
 
 ---
+
+## In-week log
+
+- **2026-07-22 (Wed):** **Rested — GI upset** (abdominal cramping in waves + mild diarrhea, **no fever**, general state fine). Threshold session postponed. Recovery: hydrate + electrolytes, low-fiber food (semolina on water, BRAT). 🚩 Refer out if fever / blood in stool / severe pain appears.
+- **2026-07-23 (Thu):** Decision fork after GI rest day. **If gut fully clear + normal appetite:** run easy 10 km (4:40–5:00, HR < 148) today as a system check, then do the **threshold Fri**. **If gut still churning:** easy 30–40 min only (or rest), reassess Fri. Do NOT run threshold today straight off the GI day — one clean easy run first. Hills dropped this week regardless.
 
 ## Session notes
 
