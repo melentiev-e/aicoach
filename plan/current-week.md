@@ -1,6 +1,8 @@
 # Current Week — Jul 27–Aug 2, 2026 (Week 8 — Phase 2, Week 2)
 
-> **Binding prescription.** Only `weekly-review` may overwrite this.
+> **Binding prescription.** Only `weekly-review` may commit a new week; `daily-check`
+> may edit it mid-week only for an athlete-confirmed adjustment. Every write must be
+> followed by `verify-week`.
 > Phase: Strength / Threshold — Week 8 of 20 (Phase 2, Week 2).
 > Committed: 2026-07-27.
 
@@ -33,11 +35,10 @@
 | 2026-07-30 Thu | Easy | 10 km | **4:30–4:55/km** | < 148 | Recovery between quality sessions |
 | 2026-07-31 Fri | Hills **(conditional on soleus)** | ~12 km incl. **8×200m hill reps** | Steady 8–10% grade, effort-based | HR uncapped on reps, easy elsewhere | Power/economy stimulus — **only if soleus is pain-free by Thursday**; if not, swap to plain easy 11 km and re-assess next week |
 | 2026-08-01 Sat | Easy + Strides | 11 km | **4:30–4:55/km** + **6×100m strides** (aim ~3:15–3:30/km effort, not the very short/slow reps from Wk7) | < 148 | Aerobic base + neuromuscular leg speed |
-| 2026-08-02 Sun | Long Run | 25 km | **4:30–4:55/km** (final 3–4 km @ ~3:55–4:00/km MP-feel if legs are fresh) | < 155 (MP < 165) | Aerobic endurance & marathon durability; continue the pickup-finish pattern from Wk7 |
+| 2026-08-02 Sun | Long Run | 25 km | **4:30–4:55/km** (final 3–4 km @ ~3:55–4:00/km MP-feel if legs are fresh) | < 148 (MP < 165) | Aerobic endurance & marathon durability; continue the pickup-finish pattern from Wk7 |
 
-**Weekly Total: ~82 km** (Phase 2 band is 85–95; deliberately under by design for a second
-straight controlled week — full band targeted for Week 9 pending soleus clearing and load
-response).
+**Weekly Total: ~87 km** (Phase 2 band is 85–95; landing near the bottom of the band —
+full build reserved for Week 9 pending soleus clearing and load response).
 
 ---
 
@@ -69,7 +70,7 @@ response).
      cut the next quality session to easy.
 
 4. **Sunday Long Run (25 km):**
-   - Keep the first ~21 km steady at 4:30–4:55/km (same easy band as the rest of the week), HR < 155.
+   - Keep the first ~21 km steady at 4:30–4:55/km (same easy band as the rest of the week), HR < 148.
    - If legs feel fresh in the final 3–4 km, repeat the Wk7 pattern: pick up to ~3:55–4:00/km
      MP-feel, HR < 165. This is now the second week of this progression — useful signal for
      marathon-shape development once RUNALYZE numbers come in.

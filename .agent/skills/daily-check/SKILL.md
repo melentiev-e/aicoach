@@ -48,7 +48,12 @@ in-week swap).
 8. **Report + propose.** Lead with the assessment, tie it to the data. If a red flag
    fires, **propose** a specific in-week adjustment (e.g. "swap tomorrow's threshold
    for easy 8k") and ask the athlete to confirm. Do **not** edit `current-week.md`
-   yourself. Be quicker to recommend rest than the athlete wants.
+   on your own initiative. Be quicker to recommend rest than the athlete wants.
+
+9. **If confirmed, apply it.** Once the athlete explicitly confirms the proposed
+   adjustment, edit `current-week.md` to reflect it, then immediately invoke
+   `verify-week` before treating the change as final.
 
 ## May write
-Nothing. Proposals only.
+`current-week.md` — only the specific adjustment the athlete just confirmed, never
+proactively. Must be followed by `verify-week` when it does.

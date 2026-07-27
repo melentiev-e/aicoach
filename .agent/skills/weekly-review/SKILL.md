@@ -52,6 +52,10 @@ The core loop. The only skill that **commits** the binding `current-week.md`.
    `date | type | distance | target pace | target HR | purpose` (§10 — every session
    states its purpose).
 
+8. **Invoke `verify-week`.** Mandatory, immediately after step 7. Do not consider the
+   week committed until it reports a clean pass (or the athlete has confirmed the
+   fixes it proposed).
+
 ## May write
 `plan/current-week.md`, `reviews/YYYY-MM-DD.md`.
 

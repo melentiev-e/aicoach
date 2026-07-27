@@ -139,11 +139,17 @@ Periodization over ~16–20 weeks:
 
 | Zone | Purpose | Current pace | Target HR |
 |------|---------|-------------|-----------|
-| Easy / Recovery | Aerobic base, recovery | 4:30–4:55/km | < 148 bpm |
+| Easy | Aerobic base | 4:30–4:55/km | < 148 bpm |
+| Recovery | Active recovery, between/after quality | 5:00–5:30/km | < 132 bpm |
 | Marathon (MP) | Goal-specific | 3:46/km (goal); current fitness ~3:52–4:00/km | ~162–168 current; ~165–170 at peak fitness |
 | Threshold (T) | Lactate threshold | 3:38–3:52/km | 165–174 bpm |
 | VO2max (I) | Aerobic ceiling | 3:20–3:32/km | 178–185 bpm |
 | Reps (R) | Speed/economy | 3:02–3:15/km | effort-based |
+
+> **Note (added 2026-07-27):** Easy and Recovery were split from a single combined
+> zone — sessions had occasionally been labeled "Easy" while prescribed at what is
+> actually recovery pace/HR. Use the split bands to distinguish them, and see
+> `verify-week` below, which checks every `current-week.md` write against this table.
 
 > **Note (updated Jul 6):** Goal MP (3:46/km) is now ~8 sec/km SLOWER than current LT (3:38/km). The LT-to-MP gap is effectively closed ahead of schedule (was targeted for wk 12–14). The remaining gap to 2:39 is marathon-specific endurance — marathon shape must grow from 30% to 65%+. MP work introduced in Phase 3 from wk 11 as planned.
 
@@ -292,20 +298,23 @@ Three layers, coarse → fine, with exactly one binding source for "what do I do
    `build-calendar` for looking ahead. Drafts only; replan freely.
 3. **`current-week.md`** — the **single binding** prescription for the active week.
    Only `weekly-review` commits it (re-checking against latest fitness/wellness).
-   `daily-check` matches runs against *this file only*.
+   `daily-check` matches runs against *this file only*. Every write to this file, by
+   any skill and for any reason, must be immediately followed by `verify-week`
+   (see below) before the change is considered final.
 
 ### Write authority
 
 | Skill | May write |
 |-------|-----------|
 | `intake` | `athlete.md`, §3 + zones in this file, first `master-plan.md` |
-| `daily-check` | nothing — **proposes** in-week changes, never edits (athlete confirms) |
-| `weekly-review` | `current-week.md` (commit next week), `/reviews/YYYY-MM-DD.md` |
+| `daily-check` | `current-week.md` — only an in-week edit reflecting a proposal the athlete has explicitly confirmed; never edits on its own initiative. Must be followed by `verify-week`. |
+| `weekly-review` | `current-week.md` (commit next week), `/reviews/YYYY-MM-DD.md`. Must be followed by `verify-week`. |
 | `phase-review` | `master-plan.md`, pace zones, re-judges the 2:39 goal |
 | `build-calendar` | `plan/calendar-<span>.md` (provisional only) |
 | `monthly-summary` | `/reviews/YYYY-MM-summary.md` — **read-only** w.r.t. the plan |
 | `race-strategy` | `/races/<race>-strategy.md` |
 | `race-debrief` | `/races/<race>-debrief.md` |
+| `verify-week` | nothing directly — reports discrepancies and, once the athlete confirms a fix, the calling context edits `current-week.md` |
 
 ### The skills
 
@@ -319,3 +328,4 @@ Three layers, coarse → fine, with exactly one binding source for "what do I do
 | `monthly-summary` | monthly | Read-only narrative wrap-up of the calendar month (volume, intensity, fitness/wellness trends, wins, concerns) |
 | `race-strategy` | pre-race | Build segment pacing + fueling + weather contingencies + mental script |
 | `race-debrief` | post-race | Honest post-race analysis |
+| `verify-week` | mandatory, immediately after any write to `current-week.md` | Check every session's type/pace/HR against §5 zones and re-derive each session's and the week's total distance from its components; stop and ask for confirmation on any discrepancy |
