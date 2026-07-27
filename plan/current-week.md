@@ -1,56 +1,77 @@
-# Current Week — Jul 20–26, 2026 (Week 7 — Phase 2 Entry: Strength & Threshold)
+# Current Week — Jul 27–Aug 2, 2026 (Week 8 — Phase 2, Week 2)
 
 > **Binding prescription.** Only `weekly-review` may overwrite this.
-> Phase: Strength / Threshold — Week 7 of 20 (Phase 2, Week 1).
-> Committed: 2026-07-20 (Updated per athlete request: full Phase 2 load, no lactate measurement required).
+> Phase: Strength / Threshold — Week 8 of 20 (Phase 2, Week 2).
+> Committed: 2026-07-27.
 
 ## Context going in
 
-- **Athlete state:** Rested well on Monday; entering Phase 2 with full volume (88 km) and 2 quality sessions. Saving lactate strips for future phase checkpoints.
-- **Threshold Calibration (from Wk6 data):** Wed threshold reps anchored strictly at **3:50–3:53/km** (not 3:44–3:48). Wk6 showed 3:44–3:48 is 13.4 mmol runaway (over MLSS). Target HR: avg ≤ 165, max ≤ 170. RPE 7–7.5/10 ("comfortably hard").
-- **Phase 2 Structure:** Introduces a second quality session (Friday Hill Repeats: 8×200m hills for power/economy without heavy metabolic debt) and builds volume to 88 km.
-- **Easy Running Guardrail:** Keep easy runs strictly easy (4:40–5:00/km, HR < 148) so the body absorbs two quality sessions.
-- **Phase-review pending:** Athlete will bring fresh RUNALYZE snapshot for full zone recalculation and 2:39 prognosis update.
+- **Athlete state:** GI illness from Wk7 fully resolved; HRV rebounded strongly (61→75
+  this morning). Friday's threshold (run under rain + lingering gut distress) hit target
+  pace/HR on 3 of 4 reps with RPE low enough to suggest room in reserve — good sign, but
+  holding the same pace band one more cycle rather than reacting to a single session.
+- **New flag — right soleus soreness/tightness** (post-Friday threshold): not gait-altering,
+  so training continues, but this sits upstream of the athlete's known shin-splint pattern.
+  Hills are gated on this clearing first (see Friday below). Soleus-specific mobility/
+  strength added to the daily protocol this week.
+- **GPS reliability:** several files this week had missing/unreliable GPS traces (likely EW
+  jamming/spoofing near Balakliia). Trust manually-lapped km distances over GPS-derived pace
+  when the two disagree; athlete's own account of splits takes priority.
+- **Volume:** stepping back up toward the Phase 2 band (85–95 km) after the illness-adjusted
+  ~75 km week, but not jumping straight to the top — landing ~82 km this week, full build
+  reserved for Week 9 if soleus and load both stay clean.
+- **Phase-review still pending:** fresh RUNALYZE snapshot needed to formally re-anchor zones
+  and re-judge the 2:39 prognosis — bring it whenever it's next available.
 
 ## Weekly prescription
 
 | Date | Type | Distance | Target pace | Target HR | Purpose |
 |------|------|----------|-------------|-----------|---------|
-| 2026-07-20 Mon | Rest | 0 km | — | — | Complete recovery |
-| 2026-07-21 Tue | Easy | 12 km | **4:40–5:00/km** | < 148 | Aerobic base building |
-| 2026-07-22 Wed | ~~Threshold~~ **REST (GI)** | 0 km | — | — | **Skipped — GI upset (abdominal cramps + mild diarrhea, no fever).** Coach call: no quality work while gut is irritated. Threshold → moved to Fri if recovered. |
-| 2026-07-23 Thu | Easy (gut test) → or Threshold | 10 km / ~17 km | **4:40–5:00/km** *(if gut still settling)* | < 148 | Recovery test after GI day — see log for decision fork |
-| 2026-07-24 Fri | ~~Hills~~ **Threshold (moved)** | ~17 km | 2 km WU + **4×3 km @ 3:50–3:53/km** (3 min jog recovery) + 2 km CD | avg ≤ 165, max ≤ 170 | **Lactate threshold MLSS stimulus** — displaced from Wed by GI. Hills dropped this week to protect recovery. |
-| 2026-07-25 Sat | Easy + Strides | 11 km | **4:40–5:00/km** + **6×100m strides** | < 148 | Aerobic base + neuromuscular leg speed |
-| 2026-07-26 Sun | Long Run | 24 km | **4:45–5:05/km** (optional: final 3 km @ 3:55/km MP feel if legs feel great) | < 155 (MP < 165) | Aerobic endurance & marathon durability |
+| 2026-07-27 Mon | Rest | 0 km | — | — | Complete recovery |
+| 2026-07-28 Tue | Easy | 12 km | **4:40–5:00/km** | < 148 | Aerobic base building |
+| 2026-07-29 Wed | Threshold | ~17 km | 2 km WU + **4×3 km @ 3:50–3:53/km** (3 min jog recovery) + 2 km CD | avg ≤ 165, max ≤ 170 | Lactate threshold MLSS stimulus — same pace band as Wk7, holding for one more cycle before any re-anchor |
+| 2026-07-30 Thu | Easy | 10 km | **4:40–5:00/km** | < 148 | Recovery between quality sessions |
+| 2026-07-31 Fri | Hills **(conditional on soleus)** | ~12 km incl. **8×200m hill reps** | Steady 8–10% grade, effort-based | HR uncapped on reps, easy elsewhere | Power/economy stimulus — **only if soleus is pain-free by Thursday**; if not, swap to plain easy 11 km and re-assess next week |
+| 2026-08-01 Sat | Easy + Strides | 11 km | **4:40–5:00/km** + **6×100m strides** (aim ~3:15–3:30/km effort, not the very short/slow reps from Wk7) | < 148 | Aerobic base + neuromuscular leg speed |
+| 2026-08-02 Sun | Long Run | 25 km | **4:35–4:55/km** (final 3–4 km @ ~3:55–4:00/km MP-feel if legs are fresh) | < 155 (MP < 165) | Aerobic endurance & marathon durability; continue the pickup-finish pattern from Wk7 |
 
-**Weekly Total: ~74 km** (planned 88; −14 km from Wed GI rest day + hills dropped). Below the Phase 2 band (85–95) by design — illness override, Week 7. Threshold + long run preserved.
+**Weekly Total: ~82 km** (Phase 2 band is 85–95; deliberately under by design for a second
+straight controlled week — full band targeted for Week 9 pending soleus clearing and load
+response).
 
 ---
 
 ## In-week log
 
-- **2026-07-22 (Wed):** **Rested — GI upset** (abdominal cramping in waves + mild diarrhea, **no fever**, general state fine). Threshold session postponed. Recovery: hydrate + electrolytes, low-fiber food (semolina on water, BRAT). 🚩 Refer out if fever / blood in stool / severe pain appears.
-- **2026-07-23 (Thu):** Decision fork after GI rest day. **If gut fully clear + normal appetite:** run easy 10 km (4:40–5:00, HR < 148) today as a system check, then do the **threshold Fri**. **If gut still churning:** easy 30–40 min only (or rest), reassess Fri. Do NOT run threshold today straight off the GI day — one clean easy run first. Hills dropped this week regardless.
+*(to be filled in as sessions land)*
 
 ## Session notes
 
 1. **Wednesday Threshold (4×3 km @ 3:50–3:53):**
-   - **No lactate strips needed.** We know your numbers now: pace + HR + RPE govern the session.
-   - Strictly control the pace: **3:50–3:53/km** (do not speed up to 3:45).
-   - Guardrail: Max HR ≤ 170. If HR approaches 172+, back off slightly.
-   - RPE target: 7–7.5/10 ("comfortably hard, could hold ~1 hour"). If it feels like an 8.5/10 ("running on inertia"), slow down.
+   - Same band as Wk7 — don't chase the "felt easy" signal from last week's session yet;
+     let the phase-review re-anchor pace off fresh RUNALYZE data instead.
+   - Guardrail: max HR ≤ 170. If HR approaches 172+, back off slightly.
+   - RPE target: 7–7.5/10. If every rep this week also feels like it has 1–2 in reserve,
+     flag it explicitly for the phase-review — that's the evidence needed to move the band.
 
-2. **Friday Hill Repeats (8×200m):**
-   - Find a steady ~8–10% gradient. Focus on strong knee drive, upright posture, and quick turnover.
-   - Walk/jog down slowly for full recovery between reps. This is for strength & form, not metabolic exhaustion.
+2. **Friday Hills (8×200m) — conditional:**
+   - Check in Thursday: soleus pain-free (no tightness/soreness on palpation or during the
+     easy run) → proceed with hills as prescribed.
+   - Any lingering tightness → skip hills, run easy 11 km instead, and re-test next week.
+     Do not push through it — downhill eccentric load is exactly what aggravates soleus/
+     shin issues for this athlete.
 
-3. **Easy Runs (Tue 12k, Thu 10k, Sat 11k):**
-   - Honor the pace range (4:40–5:00/km) and keep HR under 148 bpm. Running easy runs too fast steals recovery from your hard sessions.
+3. **Soleus / shin protocol (daily, not just Tue/Sat this week):**
+   - Existing: single-leg calf raises 3×20 + tibialis raises 3×20 (Tue/Sat).
+   - Added: seated bent-knee calf raises 2×15 + soleus foam-rolling/self-massage, most days
+     this week, especially post-run.
+   - Any soreness > 2/10 or anything that changes stride mechanics → flag immediately and
+     cut the next quality session to easy.
 
-4. **Sunday Long Run (24 km):**
-   - Keep 21 km steady at 4:45–5:05/km (HR < 155). If you feel bouncy in the last 3 km, you may pick up pace to ~3:55/km (MP feel), but keep HR < 165.
-
-5. **Shin / Strength Protocol:**
-   - 2× per week (Tue/Sat): Single-leg calf raises 3×20 + Tibialis raises 3×20.
-   - Any shin soreness > 2/10 → flag immediately and cut Friday quality to easy running.
+4. **Sunday Long Run (25 km):**
+   - Keep the first ~21 km steady at 4:35–4:55/km, HR < 155.
+   - If legs feel fresh in the final 3–4 km, repeat the Wk7 pattern: pick up to ~3:55–4:00/km
+     MP-feel, HR < 165. This is now the second week of this progression — useful signal for
+     marathon-shape development once RUNALYZE numbers come in.
+   - If GPS is unreliable again, lap manually at known km markers so distance stays accurate
+     even if the pace readout drifts.
