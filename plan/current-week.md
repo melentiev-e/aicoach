@@ -1,79 +1,87 @@
-# Current Week — Aug 10–16, 2026 (Week 10 — Phase 2, Week 4 — last structured week pre-vacation)
+# Current Block — Vacation / Mountain-Maintenance (Aug 17 – Sep 6, 2026)
 
-> **Binding prescription.** Only `weekly-review` may commit a new week; `daily-check`
-> may edit it mid-week only for an athlete-confirmed adjustment. Every write must be
-> followed by `verify-week`.
-> Phase: Strength / Threshold — Week 10 of 20 (Phase 2, Week 4). Final structured week
-> before the Aug 18 – Sep 6 vacation / mountain-maintenance block.
-> Committed: 2026-08-10.
+> **Binding prescription.** Special multi-week block: you're travelling and can't run a
+> normal weekly cadence, so the whole trip is committed here in one go. Dates are the
+> source of truth. Committed: 2026-08-16 (weekly-review). Normal weekly cadence resumes
+> at **re-entry (Wk 14, from Sep 7)** — that week gets a fresh weekly-review + RUNALYZE
+> snapshot on your return.
+> Phase: Vacation / Mountain-Maintenance (master-plan Wks 11–13). Goal per Aug 16 phase
+> review: **2:43 primary / 2:39 live upside.**
 
-## Context going in
+## The job of this block
 
-- **Controlled ~80 km quality week — NOT a full send.** (Was drafted at ~90; Monday rest was taken
-  and not backfilled, landing it near last week's volume.) Athlete requested "full send" and
-  wellness (sleep/HRV/RHR) is green, which would justify it. But the **soleus is only "mostly
-  fine" (faint tightness, <2/10), not the 2–3 clean days the Wk10 gate required**, and in 8 days
-  the Carpathian hiking block begins (+1200 m / +750 m of descent two days apart = far more
-  eccentric calf load than any run). Coach override to a real Phase 2 build with three brakes:
-  no hills, no third hard session, threshold held in the corrected band.
-- **Hills stay parked.** The hikes supply the eccentric stimulus; adding hill reps on a faintly
-  tight soleus the week before departure is the exact aggravator pattern. No hill reps this week.
-- **Two quality stimuli only:** Tue threshold + Sun long run with an MP-feel finish. Last hard day
-  is **Sunday** so the legs settle before the Aug 18 travel/hike load.
-- **Threshold band is the corrected one (Aug 3 phase review):** T = 3:50–3:57/km @ HR 156–165
-  (LT ~3:52–3:58 @ 160). The old master-plan wk10 milestone (5×2 km @ 3:38–3:44) predates this
-  revision and is retired — flagged for the Aug 16 phase review. **Run at the number, not by feel:**
-  last two threshold sessions drifted ~3 s/km fast and nipped HR 166. Hold ≤165.
-- **First MP touch:** Sunday's final 5 km at current-sustainable MP **4:00–4:06/km, HR ≤158** —
-  NOT goal 3:46 (that still equals threshold). This is a controlled MP *feel*, not a hard finish.
-- **Aug 16 = pre-vacation phase review** (formal 2:39-vs-2:43 call). Bring a fresh RUNALYZE snapshot.
-- **Soleus protocol daily; GPS:** trust manual km laps over GPS pace near Balakliia.
+- **Maintain aerobic base — the three hikes do most of it.** Pip Iван (+1200 m), Шпиці
+  (+750 m), Боржава (ridge) are big aerobic days, arguably more total load than a long run,
+  plus a large eccentric-strength stimulus. Running is *not* the aerobic driver here.
+- **Runs are short and easy** — keep the running stride and turnover awake so re-entry
+  isn't from zero. **No structured LT/MP** until Sep 3's single light touch.
+- **Arrive home healthy > any run.** This is the priority that overrides everything below.
 
-## Weekly prescription
+## Non-negotiable guards (soleus / eccentric descent load = #1 trip risk)
+
+1. **Trekking poles on every descent** — the single biggest lever to cut eccentric calf/quad
+   load. Non-negotiable on all three hikes.
+2. **No hard run the day before or after a big hike.** Rest/short-easy flanks each hike.
+3. **Daily calf/soleus/tibialis protocol** (single-leg calf raises 3×20, tibialis 3×20,
+   seated bent-knee raises 2×15, soleus roll) — every day, especially post-hike.
+4. **Monitor the soleus daily.** Anything that alters gait → stop stacking running on top of
+   hiking; drop the run, keep hiking only if pain-free. Soreness > 2/10 or 3+ days →
+   Shin Splint Protocol (master-plan), refer out if it persists.
+5. **Never force a run.** On "unlikely / long-drive" days, skip freely — a missed easy run
+   costs nothing here; a strained soleus costs the whole autumn.
+
+## Prescription (run only in the morning "yes" windows; skip freely otherwise)
 
 | Date | Type | Distance | Target pace | Target HR | Purpose |
 |------|------|----------|-------------|-----------|---------|
-| 2026-08-10 Mon | Rest | 0 km | — | — | Rest taken (athlete's call, day after long run); soleus recovery + daily calf/soleus/tibialis protocol |
-| 2026-08-11 Tue | Threshold | ~15 km | 2 km WU + **5×2 km @ 3:50–3:54/km** (90 s jog recovery) + 2 km CD | avg 158–162, **max ≤ 165** | Lactate threshold at the corrected band; progression is one more rep + tighter recoveries, NOT faster pace. Anchor by HR ~160; hold ≤165 |
-| 2026-08-12 Wed | Recovery | 8 km | **5:00–5:30/km** (by HR/feel) | < 132 | Active recovery between quality; truly easy, HR-led |
-| 2026-08-13 Thu | Easy + Strides | ~12.5 km | **4:30–4:55/km** + **6×100m strides** (~3:15–3:30/km effort) | < 148 (strides effort-based) | Aerobic + leg turnover; flat ground, **no hills**; strides only if soleus is clean |
-| 2026-08-14 Fri | Easy | 10 km | **4:30–4:55/km** | < 148 | Aerobic base; keep it genuinely easy ahead of the weekend |
-| 2026-08-15 Sat | Easy | 8 km | **4:30–4:55/km** | < 148 | Aerobic pre-long shakeout |
-| 2026-08-16 Sun | Long Run | 26 km | 21 km easy **4:30–4:55/km** + final **5 km @ 4:00–4:06/km (MP feel)** | < 148 easy; **≤ 158** on the MP 5 km | Aerobic endurance + first MP touch of the block. MP finish is controlled feel, not a hard surge — if soleus says anything, drop to easy and finish steady |
+| 2026-08-17 Mon (home) | Rest / opt. recovery | 0–6 km | recovery 5:00–5:30 if run | < 132 | Day after 30 km + a 96.5 km week (TSB −23). Rest is the default; only a short super-easy shakeout if legs feel good. Soleus protocol. |
+| 2026-08-18 Tue (depart PM) | Rest | 0 km | — | — | Travel Kharkiv→Kyiv. No run (your call). Soleus protocol. |
+| 2026-08-19 Wed (Kyiv AM) | Easy + strides | 9 km | 4:30–4:55 | < 148 | First trip run; wake the legs. 6×100 m strides on flat ground if soleus clean. |
+| 2026-08-20 Thu (Kamianets AM) | Easy | 7 km | 4:30–4:55 | < 148 | Aerobic; genuinely easy, flat/rolling. |
+| 2026-08-21 Fri (Chernivtsi AM) | Easy + strides | 7 km | 4:30–4:55 | < 148 | Aerobic + turnover. 6×100 m strides. |
+| 2026-08-22 Sat (Verhovyna AM) | Easy | 6 km | 4:45–5:15 (hilly, by feel) | < 145 | **Day before Pip Iван — keep truly easy and short.** Mountain road; do NOT pre-fatigue the legs or attack hills. |
+| 2026-08-23 Sun | **HIKE №1 — Pip Iван** | — (no run) | — | — | The long day (2028 m, +1200 m). **Poles on descent.** This is your aerobic long effort. |
+| 2026-08-24 Mon (rest/banya) | Walk / opt. tiny | 0–4 km | super easy if any | < 130 | Day after +1200 m descent, day before Шпиці. Legs trashed → gentle walk + soleus protocol is the plan. A 20–25 min flat shakeout only if zero soreness. |
+| 2026-08-25 Tue | **HIKE №2 — Шпиці** | — (no run) | — | — | 1864 m via оз. Несамовите. **Poles on descent.** No run. |
+| 2026-08-26 Wed (Bukovel) | Opt. very easy | 0–5 km | 4:45–5:15 | < 140 | Day after Шпиці. Only a very easy 20–30 min shakeout **if legs are clean**; else skip entirely. |
+| 2026-08-27 Thu (long drive) | Rest / opt. short | 0–5 km | easy if any | < 145 | Transit to Пилипець. Likely rest; short easy on arrival only if time + legs allow. |
+| 2026-08-28 Fri | **HIKE №3 — Боржава** | — (no run) | — | — | Ridge trek (easier/panoramic). Aerobic time on feet. **Poles on any descent.** |
+| 2026-08-29 Sat (→Chernivtsi AM) | Easy + strides | 9 km | 4:30–4:55 | < 148 | Day after the easier hike — legs should be OK. Aerobic + 6×100 m strides. |
+| 2026-08-30 Sun (→Lviv AM) | Easy | 7 km | 4:30–4:55 | < 148 | Aerobic; keep easy before the travel day. |
+| 2026-08-31 Mon (Lviv free) | Easy + strides | 11 km | 4:30–4:55 | < 148 | **First proper run back** (Стрийський парк). Flat, rebuild rhythm. 6×100 m strides. |
+| 2026-09-01 Tue (→Kyiv AM) | Easy | 7 km | 4:30–4:55 | < 148 | Aerobic before the Lviv→Kyiv drive. |
+| 2026-09-02 Wed (Kyiv) | Easy + strides | 11 km | 4:30–4:55 | < 148 | Aerobic; legs settling at home. 6×100 m strides. |
+| 2026-09-03 Thu (Kyiv) | **Light quality (feel)** | 10 km | 2 km easy WU + **4–5 km @ tempo/threshold FEEL (~3:55–4:05, no watch-chasing)** + easy CD | ≤ 160 on the block | **One structured touch** to wake the legs after ~2½ weeks unstructured. By feel, comfortably-hard, HR ≤160 — not a hard session, no MP/threshold-pace hunting. |
+| 2026-09-04 Fri (Kyiv) | Easy + strides | 9 km | 4:30–4:55 | < 148 | Easy day after the quality touch. 6×100 m strides. |
+| 2026-09-05 Sat (Kyiv, night train PM) | Easy | 9 km | 4:30–4:55 | < 148 | Morning easy before the night train to Kharkiv. |
+| 2026-09-06 Sun (arrive Kharkiv AM) | Rest / opt. recovery | 0–6 km | recovery 5:00–5:30 if run | < 132 | Off the night train (poor sleep). Rest is the default; short recovery shakeout only if you feel good. |
 
-**Weekly Total: ~79.7 km** (Monday rest taken, not backfilled — with a faintly-tight soleus and
-the hiking block 8 days out, the rest day is worth more than the km. Below the Phase 2 band 85–95,
-but both quality stimuli (Tue threshold + Sun MP-feel long) stay fully intact; hills parked; last
-hard day on Sunday before the Aug 18 departure).
+**Running totals (hiking excluded, big-hike aerobic load on top):**
+Week A (Aug 17–23): **~29 km + Hike №1.**
+Week B (Aug 24–30): **~19–24 km + Hikes №2 & №3.**
+Week C (Aug 31–Sep 6): **~57 km** (home stretch, running-rhythm rebuild, one light quality touch).
 
 ---
 
-## Session notes
+## Notes
 
-1. **Tuesday Threshold (5×2 km @ 3:50–3:54, 90 s jog):**
-   - Corrected T-band is 3:50–3:57 @ HR 156–165 (Garmin LT ~3:58 @ 160). Aim ~3:52 at HR
-     158–162; **max HR ≤ 165** — the last two sessions nipped 166 by running the reps ~3 s/km
-     hot. The progression this week is the fifth rep and the shorter (90 s) recoveries, not a
-     faster pace. Do NOT dip toward 3:46 — that is threshold-to-above, not cruise.
-   - Distance check: 2 WU + 5×2 km reps (10) + 4×90 s jog (~1.1) + 2 CD ≈ 15.1 km.
-   - Any soleus sensation on the reps → cut to easy immediately.
+1. **These are ceilings, not targets.** Every "yes, morning" window is an *opportunity*, not
+   an obligation. If sleep was short, the drive is long, or the soleus whispers — skip. The
+   plan is deliberately padded with optional/short days so nothing is lost by dropping one.
 
-2. **Soleus / shin protocol (daily):**
-   - Single-leg calf raises 3×20 + tibialis raises 3×20 + seated bent-knee calf raises 2×15 +
-     soleus foam-rolling/self-massage most days, especially post-run.
-   - Any soreness > 2/10 or any change to stride mechanics → flag, cut the next quality to easy,
-     re-read against the Shin Splint Protocol. **Hills stay parked.**
-   - The soleus is the whole trip's #1 injury risk — arriving at the hikes healthy beats one
-     extra hard rep this week.
+2. **The two back-to-back hikes (Aug 23 + 25) are the danger zone.** +1200 m and +750 m of
+   descent two days apart is far more eccentric calf load than any run you do. Aug 24 stays a
+   walk/rest, not a run, so you arrive at Шпиці with legs, not just to log a shakeout.
 
-3. **Sunday Long Run (26 km, first MP touch):**
-   - 21 km all steady in the easy band (HR < 148), then **5 km at 4:00–4:06/km, HR ≤ 158** —
-     current-sustainable MP *feel*, not goal MP (3:46) and not a hot surge like the last two
-     long runs. If the legs or soleus resist at that pace/HR, abandon the MP block and finish
-     steady — no forcing it before the trip.
-   - Manual km laps if GPS drifts.
+3. **Sep 3 is the only quality session in three weeks** — and it's by *feel*, HR-capped at 160,
+   explicitly not a pace-chase. Its job is to reboot leg turnover before re-entry, not to
+   build fitness. If the soleus objects, drop it to easy and finish steady.
 
-4. **Aug 16 phase review + vacation handoff:** after Sunday, run `phase-review` with a fresh
-   RUNALYZE snapshot for the formal 2:39-vs-2:43 call. Next week (Aug 17 onward) shifts to the
-   vacation / mountain-maintenance block in `master-plan.md` — this is the last binding
-   structured week until you return.
+4. **Re-entry (Wk 14, from Sep 7) is committed separately.** On your return, send a fresh
+   RUNALYZE snapshot + how the legs came through the hikes → weekly-review commits Wk 14 (a
+   deliberate rebuild week; the compressed specific phase and the 2:43-vs-2:39 question ride
+   on the re-entry check ~Sep 13). Do NOT jump into hard MP work in the first week back.
+
+5. **Standing flag holds even on vacation:** you run everything a touch fast because it feels
+   easy. Here that's fine on easy runs (HR-led), but hold the Sep 3 touch at feel/HR — and
+   remember the eccentric hiking load is the limiter, not the engine.

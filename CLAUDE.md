@@ -42,7 +42,7 @@ what happens when the data tests it.
 - **Name / handle:** Miller
 - **Age / sex:** 34, male
 - **Goal race & date:** TBC — target November 2026 marathon (working assumption: Nov 1, 2026)
-- **Goal time:** 2:39 marathon  (≈ 3:46/km · 6:04/mile average)
+- **Goal time:** **2:43 primary (≈ 3:52/km)** — revised at the Aug 16 checkpoint (shape-limited). **2:39 (3:46/km) held as an explicit live upside**, re-opened at Phase review 4 (~Oct 18) if the specific phase converts (Shape ≥ ~62%, MP 3:46 holding 10+ km @ HR ≤158, LT toward 3:38). Engine/ceiling ≈ 2:38 (HM at PB); marathon is shape-limited.
 - **Years running consistently:** ~3+ years (data from RUNALYZE from 2023 onward)
 - **Highest weekly volume safely handled:** ~95 km (Nov–Dec 2025, pre-deployment)
 - **Marathon PB / experience (and how the last 10 km felt):** 3:04:53 (Kyiv City Marathon, 2024-10-13); last 10 km feel — TBD (not yet reported)
@@ -58,12 +58,12 @@ what happens when the data tests it.
 - **Data sources:** Garmin, Strava, RUNALYZE
 
 ### Current fitness snapshot (from RUNALYZE — update each phase)
-- **Effective VO2max (and trend):** 61.84 (RUNALYZE) / 61 (Garmin) — up from 58.03 (RUNALYZE) at Jul 6; +3.8 in ~4 wk. Strong sustained upward trend (daily estimates 60–66 this week).
-- **Marathon Shape %:** 34% — up from 30%; still low, climbing ~1%/wk. No MP work yet; endurance-specific build (not the engine) is the limiter.
-- **Race prognosis (predicted M / HM / 10k):** Garmin (Aug 3) M **2:51:17**, HM 1:18:57 (3:44/km), 10k 35:30, 5k 16:42 — current rebuilt fitness. RUNALYZE HM 1:18:28 agrees; RUNALYZE M 3:26:08 is a low-shape artifact (34%), ignore. Engine + full marathon shape (Riegel from current HM) → ~2:44. **Demonstrated ceiling:** HM PB 1:15:32 (Apr 2025) → Riegel M ~2:38 → 2:39 is his 2025-peak level, currently rebuilding toward it. Trend strongly positive since the Apr–May 2025 dip.
-- **Form / Fitness / Fatigue (TSB / CTL / ATL):** TSB +3, CTL 62%, ATL 42%, A:C 0.97 (load risen appropriately; still fresh, optimal range).
-- **Max HR / Resting HR / Threshold pace & HR:** Max HR ~185 bpm; resting HR 38 bpm (↓ from 40); LT **~3:52/km @ ~160 bpm** (Garmin revised LT to 3:58/km @ 160 on Aug 3 — a sharp drop from the old 3:38 @ 171; the new value is lactate-consistent (5.3→6.1 mmol) and matches Wk8 threshold reps sitting at HR 160–168. LT HR anchor is now **160**, not 171).
-- **Last updated:** 2026-08-03 (Phase review 2, mid-Phase-2; revised same day for Garmin LT/predictor data)
+- **Effective VO2max (and trend):** 62.27 (RUNALYZE) — up from 61.84 (Aug 3), 58.03 (Jul 6). Steady climb; daily estimates 63–69 this week.
+- **Marathon Shape %:** **43%** — up from 34% (Aug 3); **+9 in 13 days**, the endurance-specific build is now moving strongly. Still below the ~65% that 2:39 needs; shape (not the engine) remains the limiter.
+- **Race prognosis (predicted M / HM / 10k):** RUNALYZE (Aug 16) 5k 16:31 (3:18), 10k **34:16 (3:26)**, HM **1:15:41 (3:35)**, M 3:16:54 (shape artifact — ignore absolute). **HM prognosis ≈ HM PB (1:15:32)** → Riegel M ≈ **2:38** = the engine/ceiling. But that assumes marathon-specific endurance matches the engine; Shape 43% says it does not yet — shape-limited current marathon ≈ 2:48–2:52. Lactate caveat: pace-implied LT likely overstates true MLSS ([[lactate-response-high]]).
+- **Form / Fitness / Fatigue (TSB / CTL / ATL):** TSB **−23**, CTL **68%**, ATL **59%**, A:C **1.24** (ramped to top of band after the 96.5 km Wk10; monotony 42%). Fatigue is expected going into the Aug 18 de-load trip.
+- **Max HR / Resting HR / Threshold pace & HR:** Max HR ~185 bpm; resting HR **36 bpm** (new low, ↓ from 38); HRV 73 ms. LT **~3:48/km @ HR ~160–162** (nudged faster from the Aug 3 ~3:52–3:58 @ 160, anchored on Wk10 threshold: 6×2 km steady reps 3:47–3:49 @ HR 157–160, opener 3:44 @ HR 146). Tempered by high lactate response (5.3→6.1 mmol) — don't over-swing on one week. LT HR anchor **160**.
+- **Last updated:** 2026-08-16 (Phase review 3, pre-vacation decision point; goal revised to 2:43 primary / 2:39 upside; zones re-derived)
 
 ---
 
@@ -135,16 +135,16 @@ Periodization over ~16–20 weeks:
   athlete's durability — never jump the band to chase the number.
 
 ### Pace zones (derive from current fitness; keep current)
-> Anchored on Garmin LT ~3:52–3:58/km @ **160 bpm**; VO2max 61.84. Updated 2026-08-03 (Phase review 2, revised same day for Garmin data). The LT HR anchor dropped from 171 → **160** — all HR bands below re-based on that. Lactate (5.3→6.1 mmol) corroborates the more conservative threshold. Previous anchors: LT 3:38/km @ 171 (Jul 6, now known to be too fast); LT 3:57/km (Jun 8).
+> Anchored on LT ~3:48/km @ **160–162 bpm**; VO2max 62.27. Updated 2026-08-16 (Phase review 3). LT nudged faster from the Aug 3 ~3:52–3:58 band on Wk10 threshold evidence (6×2 km steady reps 3:47–3:49 @ HR 157–160, opener 3:44 @ HR 146) + RUNALYZE prognosis (10k 3:26, HM 3:35). Nudge, not a swing — high lactate response (5.3→6.1 mmol) tempers it. LT HR anchor stays **160**. Previous: LT ~3:52–3:58 @ 160 (Aug 3); 3:38 @ 171 (Jul 6, too fast); 3:57 (Jun 8).
 
 | Zone | Purpose | Current pace | Target HR |
 |------|---------|-------------|-----------|
 | Easy | Aerobic base | 4:30–4:55/km | < 148 bpm |
 | Recovery | Active recovery, between/after quality | 5:00–5:30/km | < 132 bpm |
-| Marathon (MP) | Goal-specific | 3:46/km (goal — currently ≈ threshold, NOT yet marathon-sustainable); current sustainable ~4:00–4:06/km | ~150–158 current; ~155–160 at peak |
-| Threshold (T) | Lactate threshold | 3:50–3:57/km (working; Garmin LT 3:58 @ 160, Wk8 reps ~3:48 @ 160–162) | 156–165 bpm |
-| VO2max (I) | Aerobic ceiling | 3:22–3:33/km | 176–185 bpm |
-| Reps (R) | Speed/economy | 3:02–3:15/km | effort-based |
+| Marathon (MP) | Goal-specific | **3:52/km (2:43 goal)**; current-sustainable 3:55–4:02/km. 3:46 = 2:39 stretch, still ≈ threshold (NOT yet marathon-sustainable) | ~150–158 current; ~155–160 at peak |
+| Threshold (T) | Lactate threshold | 3:46–3:53/km (working; LT ~3:48 @ 160–162, Wk10 reps 3:44–3:49 @ 146→160) | 158–165 bpm |
+| VO2max (I) | Aerobic ceiling | 3:18–3:28/km | 176–185 bpm |
+| Reps (R) | Speed/economy | 3:02–3:14/km | effort-based |
 
 > **Note (added 2026-07-27):** Easy and Recovery were split from a single combined
 > zone — sessions had occasionally been labeled "Easy" while prescribed at what is
@@ -163,6 +163,17 @@ Periodization over ~16–20 weeks:
 > contrary is retracted); 2:39 needs LT to return toward the 2025-peak ~3:35 and below.
 > Standing coaching flag: athlete runs every zone a touch fast because it *feels* easy —
 > hold the prescribed paces/HR; tendons (active soleus flag) are the near-term limiter.
+
+> **Note (updated 2026-08-16, Phase review 3 — pre-vacation decision point):** Fresh
+> RUNALYZE — VO2max 62.27, **Marathon Shape 43% (↑ from 34%, +9 in 13 days)**, RHR 36,
+> HM prognosis 1:15:41 (≈ HM PB). Wk10 threshold (6×2 km, 3:44 opener @ HR 146) confirms
+> the engine moved: LT nudged to **~3:48/km @ 160–162**, threshold band to 3:46–3:53.
+> **Goal revised: 2:43 primary (3:52/km); 2:39 held as a live upside** re-opened at Phase
+> review 4 (~Oct 18) on specific-phase MP evidence — the downgrade trigger fired (Shape
+> 43% < 45%, LT not < 3:32) but the engine is at the 2:39 ceiling, so the door stays open,
+> not closed. MP working pace re-anchors to **3:52** (3:46 becomes the stretch). The
+> "runs every zone a touch fast" flag now *earns* the faster threshold, but MP must be
+> held at the number and the soleus/eccentric-descent load is the near-term limiter.
 
 ---
 

@@ -4,6 +4,19 @@
 > Race target: **November 1, 2026** (working assumption — confirm exact date)
 > Created: 2026-06-08
 
+> **Revision 2026-08-16 — Phase review 3 (pre-vacation decision point).** Fresh RUNALYZE:
+> VO2max **62.27**, **Marathon Shape 43%** (↑ from 34%, +9 in 13 days), CTL 68 / ATL 59 /
+> TSB **−23**, A:C 1.24, RHR **36**, HRV 73. Prognosis: 10k 3:26, **HM 1:15:41 (≈ HM PB)** →
+> Riegel M ≈ **2:38** (the engine/ceiling). Wk10 threshold 6×2 km @ 3:44 opening HR 146 →
+> LT nudged to **~3:48/km @ 160–162**; zones re-derived. **Downgrade trigger fired** (Shape
+> 43% < 45%, LT not < 3:32): **primary goal revised to 2:43 (3:52/km); 2:39 held as a live
+> upside**, re-opened at Phase review 4 (~Oct 18) if the specific phase converts (Shape ≥
+> ~62%, MP 3:46 holding 10+ km @ HR ≤158, LT toward 3:38). Not a downgrade of ambition —
+> the marathon is shape-limited and shape must climb through the compressed specific phase;
+> the engine already lives at 2:39. MP working pace re-anchors to **3:52** (3:46 = stretch).
+> Wk10 ran 96.5 km (new volume high) on a calm soleus; soleus/eccentric-descent load is the
+> governing constraint through the vacation. See `reviews/2026-08-16-phase.md`.
+
 > **Revision 2026-08-03 — Phase review 2 (mid-Phase-2).** Fresh RUNALYZE snapshot:
 > VO2max **61.84** (↑ from 58.03 Jul 6), marathon shape **34%** (↑ from 30%), resting
 > HR 38. **Revised same day for Garmin data:** Garmin cut LT to **3:58/km @ 160 bpm**
@@ -34,12 +47,14 @@
 
 | Item | Value |
 |------|-------|
-| Goal | 2:39:00 (3:46/km) |
+| Goal (primary) | **2:43:00 (3:52/km)** — revised Aug 16 (shape-limited) |
+| Goal (upside, live) | 2:39:00 (3:46/km) — re-open at Phase review 4 (~Oct 18) if specific phase converts |
 | Race date (working) | 2026-11-01 |
 | Weeks available | 20.5 |
-| Current LT | ~3:52/km @ ~160 bpm (Garmin revised Aug 3, lactate-consistent) |
+| Current LT | ~3:48/km @ ~160–162 bpm (Aug 16; Wk10 threshold + RUNALYZE) |
 | LT needed for 2:39 | ~3:32–3:35/km |
-| Current marathon shape | 34% (Aug 3; ↑ from 30%) |
+| LT needed for 2:43 | ~3:40–3:43/km |
+| Current marathon shape | 43% (Aug 16; ↑ from 34%) — limiter; needs ~60–65% for 2:43, ~65%+ for 2:39 |
 | Peak volume (historical) | 95 km/wk |
 | Peak volume (this plan) | 100–105 km/wk |
 | #1 risk | Shin splints during peak phase |
@@ -256,10 +271,16 @@ this week goes fully easy and the threshold waits.
 | Phase review 1 | 2026-07-06 ✓ | Done (early); LT 3:38/km confirmed; zones updated |
 | Phase review 1b | ~2026-07-20 | End of Phase 1 wk 6; confirm LT hold after build week; minor zone check |
 | Phase review 2 | ~2026-08-16 | **Before vacation** — end of strength phase; check marathon shape %, confirm LT held; set the pre-trip baseline to measure re-entry against |
+| Phase review 3 | 2026-08-16 ✓ | Done. Shape 43% (<45%) + LT ~3:48 (not <3:32) → **trigger fired: primary goal → 2:43; 2:39 held as live upside**. Zones re-derived; LT ~3:48 @ 160–162. See `reviews/2026-08-16-phase.md` |
 | Re-entry check | ~2026-09-13 | End of Wk 14 rebuild — did LT/turnover come back cleanly after the hiking block? Any lingering soleus/shin? Gate the compressed specific block on this |
 | Phase review 3 | ~2026-10-18 | End of compressed specific phase; go / no-go on 2:39 vs 2:43 pacing strategy |
 
 **Downgrade trigger (updated Jul 6):** LT already at 3:38/km — original trigger (3:48/km) cleared. New: if after Phase 2 (wk 10, Aug 16), Garmin LT has not moved below 3:32/km OR marathon shape < 45%, revise race target to 2:43–2:45.
+> **RESOLVED 2026-08-16:** trigger fired — Shape 43% (<45%) and LT ~3:48 (not <3:32).
+> Primary target moved to **2:43**; **2:39 kept as a live upside** (engine at PB/ceiling),
+> decided at Phase review 4 (~Oct 18) on specific-phase MP evidence. **New upside trigger:**
+> re-open 2:39 if by ~Oct 18 Shape ≥ ~62%, MP 3:46 holds 10+ km @ HR ≤158, and LT drifts
+> toward 3:38.
 
 **Vacation-specific note (2026-07-30):** the 3-week block delays MP-specific work and
 compresses the specific phase, so marathon shape has less time to climb. This does NOT
