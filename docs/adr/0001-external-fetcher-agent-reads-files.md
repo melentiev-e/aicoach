@@ -1,5 +1,10 @@
 # Data ingestion: an external script fetches, the agent only reads files
 
+> **Partially superseded — 2026-09-13:** The athlete authorized direct Strava API
+> retrieval and local credential storage. `strava-activities` and `strava-auth`
+> now govern that path; see `CLAUDE.md` §4.1. Strava raw evidence may be read by
+> the coach. The historical external-fetcher decision below remains for context.
+
 The coach agent must never reach the network. A standalone Node.js fetcher
 (run on a schedule, outside the agent) pulls from Strava/Garmin/RUNALYZE,
 normalises the data, and writes clean files to disk. Every skill reads only

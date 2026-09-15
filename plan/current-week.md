@@ -1,61 +1,63 @@
-# Current week — September 7–13, 2026
+# Current week — September 14–20, 2026
 
-> Binding prescription, written September 7 using weekly-review. Week 14:
-> return to running after vacation. Assumes no runs since August 27 beyond those
-> shown, no illness, and pain-free shins/soleus. These are planning assumptions;
-> additional activity or symptoms require reassessment.
-> Previous vacation prescription preserved in `archive/vacation-2026-08-17-to-09-06.md`.
-> The older `current-week-ua.md` covers vacation dates only; this file governs Sep 7–13.
+> Binding prescription, committed through weekly-review on September 13 after the
+> athlete interview. Replaces the conditional calendar for these dates. Previous
+> week preserved in `archive/2026-09-07-to-09-13.md`. This file is the binding source;
+> `current-week-ua.md` is an older plan.
 
-## Assessment
-
-Readiness 96, sleep 87, balanced HRV 68 ms and recovery time 0 h are encouraging.
-However, acute load is 1 and no runs are shown for Aug 28–Sep 6. Start with
-40 km over five runs. The provisional master-plan 72 km / threshold / 22–24 km
-long-run outline is superseded for this week. No threshold, MP, hard intervals,
-or fast finishes. Do not add distance to compensate for the vacation.
-
-## Prescription
+The return week reached 46.07 km versus 40 prescribed, with fatigue accumulating
+and RPE 5–6 on several runs. Revised September 13 after discussion: plan **50 km**,
++3.93 km / +8.5% over actual volume, conditional on recovery. This replaces the
+initial 38 km prescription. No running pain and Thursday RPE 3 support trying
+modest progression; fatigue still limits intensity. 50 km is a target, not a
+minimum to complete regardless of effort or symptoms.
+Massage-only leg tension was clarified; additional physical load is absent.
+Keep all running Easy/Recovery, with no threshold, MP, strides or fast finish.
+See `../reviews/2026-09-13.md` for evidence and uncertainty.
 
 | Date | Type | Distance | Target pace | Target HR | Purpose |
 |------|------|----------|-------------|-----------|---------|
-| 2026-09-07 Mon | Recovery | 6 km | 5:00–5:30/km | <132 bpm | Gentle return; assess stride and calf/shin response. |
-| 2026-09-08 Tue | Easy | 8 km | 4:45–4:55/km | <148 bpm | Restore relaxed aerobic rhythm. |
-| 2026-09-09 Wed | Rest | 0 km | — | — | Absorb the first two runs; optional comfortable walk. |
-| 2026-09-10 Thu | Easy | 8 km | 4:45–4:55/km | <148 bpm | Repeat easy running and compare effort with Tuesday. |
-| 2026-09-11 Fri | Recovery | 6 km | 5:00–5:30/km | <132 bpm | Light running before the weekend. |
-| 2026-09-12 Sat | Rest | 0 km | — | — | Recover before Sunday's longer run. |
-| 2026-09-13 Sun | Long run (Easy) | 12 km | 4:45–4:55/km | <148 bpm | Reintroduce continuous time on feet; no progression finish. |
+| 2026-09-14 Mon | Rest | 0 km | — | — | Recover from Sunday's heat strain and accumulated fatigue. |
+| 2026-09-15 Tue | Easy | 10 km | 4:45–4:55/km | <148 bpm | Restore comfortable aerobic rhythm after rest. |
+| 2026-09-16 Wed | Recovery | 8 km | 5:00–5:30/km | <132 bpm | Gentle running; assess whether effort is returning to normal. |
+| 2026-09-17 Thu | Easy | 10 km | 4:45–4:55/km | <148 bpm | Repeat Tuesday's easy effort without extending distance. |
+| 2026-09-18 Fri | Rest | 0 km | — | — | Absorb the three running days and prioritize sleep. |
+| 2026-09-19 Sat | Recovery | 8 km | 5:00–5:30/km | <132 bpm | Keep legs relaxed before the longer run. |
+| 2026-09-20 Sun | Long run (Easy) | 14 km | 4:45–4:55/km | <148 bpm | Maintain easy endurance without exceeding last Sunday’s distance; choose cooler conditions. |
 
-**Weekly total: 40 km; five runs, two rest days.** All distances include any
-warm-up and cool-down running; there are no additional repetitions or strides.
+**Weekly total: 50 km; five runs, two rest days.** All warm-up and cool-down
+running is included in these distances; there are no additional components.
 
-## How to execute and adjust
+## Effort and weather
 
-- Easy means conversational, approximately RPE 2–3/10. Use the slower end initially.
-  If effort or HR is too high, slow further regardless of pace. The listed pace is
-  guidance, not a minimum speed; do not accelerate to reach a target HR.
-- Run on familiar, relatively flat routes. First 5–10 minutes particularly gentle,
-  within the listed distance. No doubles or extra kilometres if you feel fresh.
-- Sunday's 12 km requires the earlier runs to feel comfortable and no new calf/shin
-  symptoms during them or the following mornings. Otherwise shorten to 8 km easy
-  (36 km week) if merely fatigued, or rest if pain is present (28 km week).
-- Shin/soleus pain reaching 2/10: stop that run and report before the next session;
-  skip running while symptomatic. Pain altering gait means stop and seek assessment.
-  Persistent symptoms warrant a physiotherapist/doctor, not a pace adjustment.
-- Poor sleep across several nights, an unusual resting-HR rise, HRV falling outside
-  baseline with fatigue, or unexpectedly hard easy running: shorten or skip the run.
-  Do not make up missed distance later.
-- Optional 10 minutes of familiar, light strength/mobility after Tuesday and Friday,
-  only if symptom-free: comfortable calf raises, bent-knee calf raises and hip/core
-  work. No new heavy exercises or sets to failure this week.
+- Easy should be conversational, about RPE 2–3/10; Recovery about 1–2/10.
+  Pace bands are for comfortable conditions, not minimum speeds. Start gently;
+  slow below the band when heat, HR or effort requires it. Never accelerate to
+  reach an HR target, and do not extend a run because you feel good.
+- Balakliia forecast checked September 13: Tue about 16°C daytime with rain;
+  Wed 22°C, Thu 24°C, Sat 25°C, Sun 24°C (night low around 17°C Sunday).
+  These are provisional daily forecasts, not temperatures at your run time.
+  [Forecast source](https://pogodnik.com/uk/2970-pogoda-v-balakliyi-harkivska-oblast-ukrayina/month).
+- Prefer the cooler daylight window, especially Saturday/Sunday, without cutting
+  sleep to fit it. Check local hourly conditions before leaving. Choose a familiar
+  flat route with shade and water access; use secure footing in Tuesday's rain.
+- If HR keeps rising despite slowing, or a supposed easy run feels like RPE 5–6,
+  shorten or stop it. Do not force the distance or make it up later.
+- After Wednesday, if Recovery still feels like RPE 5 or fatigue has not eased,
+  shorten Thursday to 8 km, Saturday to 6 km and Sunday to at most 10 km
+  (42 km week if Tuesday/Wednesday were completed). Report before adding load.
+- Sunday's 14 km requires comfortable earlier runs and no new symptoms during
+  running or the following mornings. If fatigue returns, cap it at 10 km easy
+  (46 km week if all other runs were completed); if not recovered enough for easy
+  running, rest (36 km week with all other runs completed). Earlier cuts reduce
+  these totals further. Do not make up omitted kilometres.
+- New shin/calf pain: stop and report before the next run. Pain affecting gait or
+  persistent symptoms warrants professional assessment. Massage tenderness alone
+  is not a reason to test the legs with faster running.
 
-## Feedback and next decision
+## Next check
 
-After the first run, report pace, average HR, RPE and any shin/soleus symptoms,
-including next-morning response. On September 13 review the week and a fresh
-RUNALYZE snapshot (especially Marathon Shape), plus current resting HR and the
-confirmed race/date. Resume structured work only after this return is tolerated;
-no automatic jump to the old master-plan volume next Monday.
-
-See `../reviews/2026-09-07.md` for the screenshot review and evidence limitations.
+Prioritize more sleep opportunity. After Wednesday report whether recovery effort
+has eased; report sooner for new symptoms or worsening fatigue. Review September
+20 with the actual runs and RPE. No automatic return to quality work or the old
+master-plan mileage. Race goals and zone definitions are unchanged.

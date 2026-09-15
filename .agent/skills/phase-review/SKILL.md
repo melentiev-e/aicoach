@@ -14,6 +14,19 @@ materially. Don't chase a single workout; act on sustained movement in the marke
 - `plan/master-plan.md`, recent `reviews/`.
 - `athlete.md` and §3 fitness snapshot block.
 
+## Required interview — before coaching decisions
+
+Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
+existing context, ask focused follow-ups, and **wait for answers** before dependent
+recommendations or writes. Current answers already supplied satisfy the interview;
+read-only data inspection may continue while waiting.
+
+Cover current fitness markers and their dates, recent key-session/race effort,
+health and recovery, training interruptions, upcoming constraints, confirmed race
+date and goal priorities. Explore why markers or execution changed before revising
+zones, judging the goal or changing the master plan. Unavailable device metrics
+may remain unknown; they are not a reason to skip the athlete's context.
+
 ## Steps
 
 1. **Gather the fitness snapshot.** Ask the athlete to provide current RUNALYZE numbers:

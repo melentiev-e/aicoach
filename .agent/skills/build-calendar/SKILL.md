@@ -12,7 +12,21 @@ Expands the coarse arc into concrete sessions for a chosen span. The output is
 ## Read first
 - `CLAUDE.md` §5 (methodology, pace zones), §10 (output conventions).
 - `plan/master-plan.md` (the arc + current phase), pace zones in `CLAUDE.md`.
-- Latest `logs/fitness.csv` and recent `logs/wellness.csv` for current readiness.
+- Latest fitness/wellness context in conversation and recent reviews (check dates;
+  old observations do not establish current readiness).
+
+## Required interview — before coaching decisions
+
+Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
+existing context, ask focused follow-ups, and **wait for answers** before dependent
+recommendations or writes. Current answers already supplied satisfy the interview;
+read-only data inspection may continue while waiting.
+
+Cover the requested dates, available days/time limits and long-run preference,
+duty/travel or other physical load, current symptoms/recovery, and any changed
+race/date or priorities. Reuse a recent completed weekly/phase interview and ask
+only for changes. Complete the interview before writing even a provisional draft;
+readiness must come from current conversation, not assumed from old CSV entries.
 
 ## Steps
 

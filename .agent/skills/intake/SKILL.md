@@ -11,6 +11,18 @@ weekly loop takes over.
 ## Read first
 - `CLAUDE.md` in full (your operating manual — role, methodology, decision rules).
 
+## Required interview — before coaching decisions
+
+Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
+existing context, ask focused follow-ups, and **wait for answers** before dependent
+recommendations or writes. Current answers already supplied satisfy the interview;
+read-only data inspection may continue while waiting.
+
+Cover missing profile details: race/date and goal priorities, running and race
+history, recent training, injury/current symptoms, recovery, available days and
+facilities, life constraints, fueling experience and current fitness markers.
+Complete this interview before deriving zones or building the first plan.
+
 ## Steps
 
 1. **Fill the athlete profile.** Interview the athlete and complete every `[FILL IN]`

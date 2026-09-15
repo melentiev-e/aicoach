@@ -15,6 +15,20 @@ in-week swap).
 - The newest file(s) in `logs/activities/` — identify the relevant one(s) by activity
   ID or by what the athlete mentions in conversation.
 
+## Required interview — before coaching decisions
+
+Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
+existing context, ask focused follow-ups, and **wait for answers** before dependent
+recommendations or writes. Current answers already supplied satisfy the interview;
+read-only data inspection may continue while waiting.
+
+Establish activity/date and intended session only if not already known. Ask about
+RPE, pain during/after the run and next-morning response when available, fatigue,
+sleep/recovery, and reasons for material deviations (conditions, fueling or stops).
+Ask about near-term constraints only if an adjustment depends on them. Complete
+this interview before the coaching assessment or adjustment proposal. Later RPE
+and wellness steps reuse these answers rather than repeating the questions.
+
 ## Steps
 
 1. **Identify the activity.** If the athlete hasn't said which file or which date,

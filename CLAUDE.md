@@ -87,7 +87,7 @@ what happens when the data tests it.
     <race>-strategy.md   <- pacing + fueling + contingency plans
     <race>-debrief.md    <- honest post-race analysis
 /docs/adr/              <- architecture decision records
-/.claude/skills/        <- the coaching skills (see §12), each its own SKILL.md
+/.agent/skills/        <- the coaching skills (see §12), each its own SKILL.md
 ```
 
 **Data layout rules:**
@@ -111,6 +111,16 @@ The athlete exports activities from Garmin Connect as per-lap CSV files and drop
 into `logs/activities/`. The agent reads those files directly — no fetcher or external
 script required. Each file is named `activity_<id>.csv` where the ID is the Garmin
 activity ID.
+
+**Strava API retrieval (authorized September 13, 2026):** `strava-activities` may
+retrieve activity data directly and read/save the evidence under ignored
+`data/raw/strava/`. `strava-auth` manages credentials in the gitignored root `.env`.
+This supersedes the older external-fetcher-only rule for Strava. The legacy
+aggregate CSV fetcher is not the coaching data path. Retain API provenance and
+Strava IDs; do not relabel Strava JSON as Garmin CSV or duplicate the same run
+across sources. Use Strava's documented units/time fields for API summaries;
+§6's Garmin CSV calculations apply only to Garmin exports. The coaching skills
+may use this retrieved evidence instead of asking for duplicate CSV uploads.
 
 ---
 
@@ -226,8 +236,9 @@ wellness context at the start of each daily-check and weekly-review if not offer
 
 ## 7. Workflow & Cadence
 
-The athlete drives the cadence. The agent reads files that are already on disk;
-it never fetches data from external services.
+The athlete drives the cadence. The agent reads local Garmin exports and may
+retrieve Strava activities through `strava-activities`, using `strava-auth` for
+credentials. Retrieval does not bypass the coaching interview below.
 
 - **Each session:** athlete exports the activity from Garmin Connect as a per-lap CSV
   and drops it into `logs/activities/`. In conversation they add: date, session type,
@@ -244,6 +255,39 @@ it never fetches data from external services.
 - **Pre-race:** build `/races/<race>-strategy.md` (segment pacing, fueling schedule,
   weather contingencies, mental script).
 - **Post-race:** athlete drops the race activity CSV; honest `/races/<race>-debrief.md`.
+
+### 7.1 Required coaching interview
+
+For `intake`, `daily-check`, `weekly-review`, `phase-review`, `build-calendar`,
+`monthly-summary` and `race-strategy` / `race-debrief`, complete a focused athlete
+interview after reading the project context and before prescribing, proposing
+training changes, judging readiness/goals, or writing the final review or strategy.
+Each skill lists the topics relevant to its decision.
+
+- Read `athlete.md`, this manual, relevant plans/reviews and the current conversation
+  first. Reuse established facts and answers; ask only about missing, changed,
+  stale or conflicting information. Do not repeat intake for an established athlete.
+  Historical wellness is not evidence of current recovery or absence of pain.
+- Ask a few focused questions at a time, starting with health/recovery for training
+  decisions. Follow up where an answer could change the recommendation. Use the
+  actual activities to ask specific questions rather than sending a generic form.
+- Wait for the athlete's answers before dependent coaching decisions or plan writes,
+  including provisional plans. Asking and immediately assuming an answer does not
+  complete the interview. Read-only data retrieval, calculations and observations
+  may continue while waiting; do not present a training prescription as an observation.
+- The interview is complete when relevant topics are answered in the current context
+  or the athlete explicitly says they are unknown, unavailable or declines them.
+  Already-supplied answers count; do not ask again merely to satisfy this step.
+  Briefly state the understanding and remaining uncertainty before proceeding.
+  No separate approval is required unless the skill already requires it.
+- If the athlete explicitly requests proceeding without an answer, state the limits
+  and assumptions. Never interpret missing symptom information as pain-free status
+  or prescribe work whose suitability depends on an unresolved health concern.
+- Keep subjective answers in the conversation; do not introduce a wellness log or
+  duplicate sensitive details. Existing reviews may note the decision's limitations.
+- `verify-week` is a mechanical exception: run checks immediately. Interview only
+  to resolve missing or conflicting prescription details; do not restart a wellness
+  interview or delay unambiguous checks. Its existing fix-confirmation rules remain.
 
 ---
 
@@ -307,8 +351,9 @@ the recent multi-week average. Recovery weeks roughly every 3–4 weeks.
 ## 12. Skills
 
 The coaching procedures are implemented as invokable project skills under
-`/.claude/skills/`, one `SKILL.md` each. Invoke the one that fits the moment; the
-agent loads only that skill's detail.
+`/.agent/skills/`, one `SKILL.md` each. Invoke the one that fits the moment; the
+agent loads only that skill's detail. `.agents/skills` links to `.agent/skills`
+for Codex discovery.
 
 ### Plan layers (source of truth)
 
@@ -328,6 +373,8 @@ Three layers, coarse → fine, with exactly one binding source for "what do I do
 
 | Skill | May write |
 |-------|-----------|
+| `strava-auth` | Root `.env` and ignored OAuth state/recovery files only |
+| `strava-activities` | Ignored Strava API evidence and retrieval manifests only |
 | `intake` | `athlete.md`, §3 + zones in this file, first `master-plan.md` |
 | `daily-check` | `current-week.md` — only an in-week edit reflecting a proposal the athlete has explicitly confirmed; never edits on its own initiative. Must be followed by `verify-week`. |
 | `weekly-review` | `current-week.md` (commit next week), `/reviews/YYYY-MM-DD.md`. Must be followed by `verify-week`. |
@@ -342,6 +389,8 @@ Three layers, coarse → fine, with exactly one binding source for "what do I do
 
 | Skill | Cadence / trigger | Job |
 |-------|-------------------|-----|
+| `strava-auth` | Strava authorization/expiry/scope issues | Obtain or refresh read access and persist credentials without displaying secrets |
+| `strava-activities` | Requested Strava activity retrieval | Fetch date-window summaries, details/laps or selected streams; hand evidence to coaching skills |
 | `intake` | once, at setup | Fill §3, derive zones, judge whether 2:39 is realistic, build the first plan |
 | `daily-check` | per new activity | Read the new Garmin CSV + wellness from conversation, match to `current-week.md`, surface pace-at-HR and §8 red flags, **propose** (not apply) an in-week adjustment |
 | `weekly-review` | weekly (core loop) | Read week's Garmin CSVs + wellness/fitness from conversation + trends → write `/reviews/` → commit next `current-week.md` |

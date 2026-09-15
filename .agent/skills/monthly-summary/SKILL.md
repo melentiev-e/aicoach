@@ -13,6 +13,19 @@ edits the plan (that is `phase-review`).
 - All activity files in `logs/activities/` for the month.
 - The month's `reviews/` files for context on what happened and why.
 
+## Required interview — before coaching decisions
+
+Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
+existing context, ask focused follow-ups, and **wait for answers** before dependent
+recommendations or writes. Current answers already supplied satisfy the interview;
+read-only data inspection may continue while waiting.
+
+Resolve activity coverage/date ambiguities, then ask about missing monthly context:
+fatigue/sleep/mood trends, niggles/illness, disruptions or unlogged load, personal
+wins/concerns and available fitness trends. Reuse weekly interviews. Complete this
+interview before the final narrative; if subjective information is explicitly
+unavailable, label that gap and keep conclusions limited to recorded evidence.
+
 ## Steps
 
 1. **Identify the month's activities.** List files in `logs/activities/` and ask the

@@ -14,6 +14,20 @@ detail to the stakes).
 - `athlete.md` for fueling history and prior race execution.
 - Any prior `races/<race>-debrief.md` for lessons learned.
 
+## Required interview — before coaching decisions
+
+Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
+existing context, ask focused follow-ups, and **wait for answers** before dependent
+recommendations or writes. Current answers already supplied satisfy the interview;
+read-only data inspection may continue while waiting.
+
+Confirm race/date/distance and goal priorities, recent fitness evidence, current
+health/recovery, course and expected conditions, travel/start logistics, and the
+athlete's practiced fueling/hydration quantities, products and gut tolerance.
+Discuss previous pacing problems and preferences. Verify externally available
+race facts rather than asking the athlete to supply everything. Resolve untested
+or unknown fueling assumptions before prescribing a race schedule.
+
 ## Steps
 
 1. **Set the target.** Ask the athlete for the latest RUNALYZE prognosis or recent

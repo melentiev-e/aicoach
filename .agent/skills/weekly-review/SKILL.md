@@ -14,6 +14,19 @@ The core loop. The only skill that **commits** the binding `current-week.md`.
 - All activity files in `logs/activities/` that belong to this week. If it is not
   clear which files are this week's, ask the athlete to list them (by filename or date).
 
+## Required interview — before coaching decisions
+
+Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
+existing context, ask focused follow-ups, and **wait for answers** before dependent
+recommendations or writes. Current answers already supplied satisfy the interview;
+read-only data inspection may continue while waiting.
+
+Cover current pain and next-morning symptoms, sleep/fatigue and available HRV/RHR
+trends; session intent/RPE, reasons for deviations and relevant conditions; unlogged
+physical load; next week's availability; changed race goals/date and fresh fitness
+markers if available. Use the week's data to target follow-ups. Complete the
+interview before the final assessment and before any next-week prescription.
+
 ## Steps
 
 1. **Gather context.** Before diving into the data, ask (if not already provided):

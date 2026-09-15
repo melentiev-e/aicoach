@@ -15,6 +15,16 @@ recoveries + cooldown) don't always add up to the stated total.
 - `CLAUDE.md` §3 (athlete params), §5 (pace zone table — Easy, Recovery, MP, T, I, R).
 - `plan/current-week.md` as it stands right after the write being verified.
 
+## Interview only when prescription details are unclear
+
+Follow the mechanical-check exception in
+[CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview). Do not repeat
+the coaching interview. If session intent, components or the applicable zone are
+missing/conflicting and affect verification, ask a focused question and wait before
+resolving that item or declaring a clean pass. Continue all unambiguous checks.
+Do not substitute guessed intent; retain the existing discrepancy/fix-confirmation
+workflow below.
+
 ## Checks
 
 Run all three for every row in the weekly prescription table, then report all

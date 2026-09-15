@@ -15,6 +15,19 @@ actually happened so the next block is smarter.
 - Ask the athlete for post-race wellness context: how legs felt, fueling execution,
   any GI issues, weather impact.
 
+## Required interview — before coaching decisions
+
+Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
+existing context, ask focused follow-ups, and **wait for answers** before dependent
+recommendations or writes. Current answers already supplied satisfy the interview;
+read-only data inspection may continue while waiting.
+
+Confirm the race/activity and official result if missing. Ask for the athlete's
+account of effort by stage (especially the finish), pacing decisions, actual fuel
+and fluids, GI issues, weather/stops, pain and current recovery, and their main
+lessons. Complete this interview before assigning causes, judging fitness or
+writing lessons for the next block; splits alone do not explain why a race unfolded.
+
 ## Steps
 
 1. **Identify the race file.** Ask the athlete which `activity_<id>.csv` is the race.
