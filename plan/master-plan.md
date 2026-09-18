@@ -1,8 +1,35 @@
-# Master Plan — Miller → 2:39 Marathon
+# Master Plan — Miller → October 10 Half Marathon
 
 > Living document. Revised by `phase-review` after each block; annotated when changed.
-> Race target: **November 1, 2026** (working assumption — confirm exact date)
+> Race target: **October 10, 2026** (athlete-confirmed September 17, 2026)
+> **Date correction 2026-09-17:** 23 days remain. The dated HM framework below supersedes the older marathon schedules and October 18 checkpoints; use `current-week.md` for the binding prescription.
 > Created: 2026-06-08
+
+> **Revision 2026-09-17 — Half-marathon focus.** Athlete requests HM preparation for October 10, with sub-1:15:32 as a stretch ambition. RUNALYZE HM 1:17:20 and Garmin 1:19:02 do not yet support PB pacing; no recent fast sessions establish current race ability. Event entry/HM availability remains unconfirmed; usual training availability is assumed unchanged.
+>
+> This revision supersedes all future marathon volume, MP work, long runs, checkpoints and taper schedules below; retain them as historical context. Existing pace zones stay provisional. `current-week.md` remains the binding daily prescription. September 18 finalization sets Friday rest, Saturday 8 km Recovery and Sunday at most 18 km Easy; September 17 strides are completed activity, not a pending future session.
+
+## Active HM preparation framework — September 17 to October 10
+
+This is the coarse phase framework, not a replacement binding weekly table. Reassess after each quality session and its next-morning response; do not increase both volume and intensity to catch up.
+
+| Dates | Running volume | Focus |
+|-------|----------------|-------|
+| Sep 17–20 | Revised prescribed week: 54 km; projected actual 55.37 km | September 18 finalization after July 18–September 17 Strava review: Friday rest, Saturday 8 km Recovery, Sunday at most 18 km Easy if Saturday and next-morning response are comfortable. No additional strides, threshold or fast finish this weekend. |
+| Sep 21–27 | Approximately 50–55 km, conditional on recovery | One controlled threshold reintroduction, initially 3 × 6 minutes at the existing 3:46–3:53/km band with 2-minute recovery jogs; start at the slower end, RPE about 6/10, no forcing pace/HR. HR 158–165 is a reference once settled, not a target to chase. Warm-up/cool-down included in weekly volume. Easy long run at most 18 km if this Sunday's actual run and the quality session leave no adverse response; do not increase the long run when adding quality. |
+| Sep 28–Oct 4 | Hold around the preceding week's actual volume, at most 55 km | One controlled longer threshold session, progressing only if the first was comfortable. Use its sustained pace, effort and HR to reassess HM race pace; no mandatory 3:35/km test or all-out time trial. Keep long run at most 16 km; omit progression if effort worsens. |
+| Oct 5–10 | 20–28 km before race, plus 21.1 km HM (41.1–49.1 km including race) | Reduce training volume, retain a brief familiar intensity touch early in the week and relaxed strides if tolerated. No long run or fitness test; exact sessions committed in race-week review. |
+
+Only one substantive quality session weekly initially; other running Easy/Recovery. Strides can accompany one or two easy runs only after the first exposure is tolerated, with full recovery. Stop faster work for new pain; gait-changing or persistent pain needs professional assessment. Return to easy/rest if fatigue or unusually high effort returns. Do not make up missed kilometres.
+
+**Goal decision:** Treat 1:17–1:19 as the current model-estimated range, not a guaranteed finish or final pacing prescription. PB remains an ambition. A short broken workout at 3:35/km does not establish the ability to sustain that pace for 21.1 km. Choose race pace from the next two weeks' execution, recovery and race conditions.
+
+Taper rationale: reducing volume while retaining familiar intensity is supported by endurance taper evidence; this athlete's exact reduction is an individualized coaching choice, not a guaranteed performance gain. [Wang et al., 2023](https://pubmed.ncbi.nlm.nih.gov/37163550/).
+
+---
+
+## Historical marathon plan — superseded for upcoming training
+
 
 > **Revision 2026-08-16 — Phase review 3 (pre-vacation decision point).** Fresh RUNALYZE:
 > VO2max **62.27**, **Marathon Shape 43%** (↑ from 34%, +9 in 13 days), CTL 68 / ATL 59 /
@@ -49,8 +76,8 @@
 |------|-------|
 | Goal (primary) | **2:43:00 (3:52/km)** — revised Aug 16 (shape-limited) |
 | Goal (upside, live) | 2:39:00 (3:46/km) — re-open at Phase review 4 (~Oct 18) if specific phase converts |
-| Race date (working) | 2026-11-01 |
-| Weeks available | 20.5 |
+| Race date (confirmed) | 2026-10-10 |
+| Time remaining (September 17) | 23 days |
 | Current LT | ~3:48/km @ ~160–162 bpm (Aug 16; Wk10 threshold + RUNALYZE) |
 | LT needed for 2:39 | ~3:32–3:35/km |
 | LT needed for 2:43 | ~3:40–3:43/km |

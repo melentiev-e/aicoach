@@ -41,8 +41,9 @@ what happens when the data tests it.
 
 - **Name / handle:** Miller
 - **Age / sex:** 34, male
-- **Goal race & date:** TBC — target November 2026 marathon (working assumption: Nov 1, 2026)
-- **Goal time:** **2:43 primary (≈ 3:52/km)** — revised at the Aug 16 checkpoint (shape-limited). **2:39 (3:46/km) held as an explicit live upside**, re-opened at Phase review 4 (~Oct 18) if the specific phase converts (Shape ≥ ~62%, MP 3:46 holding 10+ km @ HR ≤158, LT toward 3:38). Engine/ceiling ≈ 2:38 (HM at PB); marathon is shape-limited.
+- **Goal race & date:** Half marathon — October 10, 2026 (date confirmed; HM focus requested September 17, 2026; event entry/distance availability not independently confirmed)
+- **Timeline correction (2026-09-17):** 23 days remain until race day. Older November 1 schedules and October 18 pre-race checkpoints are obsolete; the September 17 HM phase review supersedes that framework.
+- **Goal time:** HM PB attempt, sub-1:15:32 (3:34.8/km), is a stretch ambition pending current quality-session evidence. Previous marathon targets (2:43 primary / 2:39 upside) are deferred.
 - **Years running consistently:** ~3+ years (data from RUNALYZE from 2023 onward)
 - **Highest weekly volume safely handled:** ~95 km (Nov–Dec 2025, pre-deployment)
 - **Marathon PB / experience (and how the last 10 km felt):** 3:04:53 (Kyiv City Marathon, 2024-10-13); last 10 km feel — TBD (not yet reported)
@@ -57,7 +58,12 @@ what happens when the data tests it.
 - **Fueling experience (gels, gut tolerance):** Gels tested and tolerated well in training
 - **Data sources:** Garmin, Strava, RUNALYZE
 
-### Current fitness snapshot (from RUNALYZE — update each phase)
+### Current reassessment — September 17, 2026
+- Screenshots supplied September 17 (underlying calculation dates not shown): RUNALYZE HM 1:17:20, 10k 34:13, 5k 16:29; Garmin HM 1:19:02, 10k 35:37, 5k 16:48. These are model outputs, not demonstrated race performances.
+- No recent fast-running evidence. Retain existing pace zones provisionally; easy-run HR and predictions alone do not justify faster threshold prescriptions.
+- HM preparation supersedes the marathon build. See `reviews/2026-09-17-phase.md` and the dated master-plan revision. Current-week changes still require the athlete's confirmation.
+
+### Historical August fitness snapshot (from RUNALYZE — update each phase)
 - **Effective VO2max (and trend):** 62.27 (RUNALYZE) — up from 61.84 (Aug 3), 58.03 (Jul 6). Steady climb; daily estimates 63–69 this week.
 - **Marathon Shape %:** **43%** — up from 34% (Aug 3); **+9 in 13 days**, the endurance-specific build is now moving strongly. Still below the ~65% that 2:39 needs; shape (not the engine) remains the limiter.
 - **Race prognosis (predicted M / HM / 10k):** RUNALYZE (Aug 16) 5k 16:31 (3:18), 10k **34:16 (3:26)**, HM **1:15:41 (3:35)**, M 3:16:54 (shape artifact — ignore absolute). **HM prognosis ≈ HM PB (1:15:32)** → Riegel M ≈ **2:38** = the engine/ceiling. But that assumes marathon-specific endurance matches the engine; Shape 43% says it does not yet — shape-limited current marathon ≈ 2:48–2:52. Lactate caveat: pace-implied LT likely overstates true MLSS ([[lactate-response-high]]).

@@ -8,6 +8,8 @@
 ## Identity
 
 - **Handle:** Miller
+- **Goal race date:** October 10, 2026 — half-marathon focus requested September 17; event entry/distance availability unconfirmed.
+- **Current ambition:** Beat HM PB 1:15:32; stretch goal awaiting current workout evidence. Marathon goals deferred.
 - **Age / Sex:** 34, male
 - **Weight:** 80 kg
 - **Location (current):** Balakliiskyi raion, Kharkiv Oblast, Ukraine (military service)
