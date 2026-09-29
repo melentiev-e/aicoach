@@ -1,3 +1,15 @@
+# Master Plan — Endurance rebuild toward 100 km/week
+
+> **Active revision — September 28, 2026.** October 10 is cancelled; the athlete has no scheduled races. The goal is now an eight-week endurance build incorporating controlled threshold work, selective VO₂max sessions and progression toward 30–32 km Sunday long runs. This revision supersedes the HM framework and all older future race prescriptions below. Historical sections are retained as history.
+>
+> Read [the September 28–November 22 overview](calendar-2026-09-28-to-11-22.md) for workout structure, intensity anchors and progression gates. Weekly targets: approximately **66, 74, 82, 68, 86, 94, 100, 78 km**. Long runs: **22, 24, 26, 20, 28, 30, 32, 24 km**. Weeks 4 and 8 are recovery weeks. Week 7 is a conditional first 100 km week, not proof that this volume is sustainable. Delay milestones if recovery or execution fails the gates; never catch up missed distance.
+>
+> Current recovery interview: legs feel good, good sleep, light fatigue, stable resting HR, HRV 61; availability confirmed for 6–7 days and Sunday long runs across the block. Latest actual week 65.51 km, with threshold work harder than intended and a long run finishing at RPE 5–6. Existing zones remain provisional; no faster threshold or historical VO₂max pace is newly authorized. `current-week.md` holds the binding September 28–October 4 prescription.
+
+---
+
+## Historical September 17 HM framework — superseded September 28
+
 # Master Plan — Miller → October 10 Half Marathon
 
 > Living document. Revised by `phase-review` after each block; annotated when changed.
