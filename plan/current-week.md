@@ -1,71 +1,46 @@
-# Current week — September 28–October 4, 2026
+# Current week — October 5–11, 2026
 
-> Binding daily prescription, authorized September 28 through weekly-review.
-> Week 1 of the [eight-week endurance build](calendar-2026-09-28-to-11-22.md).
-> Previous prescription: [September 21–27](archive/2026-09-21-to-09-27.md).
-> October 10 is cancelled; no races are scheduled.
+> Binding prescription through weekly-review, October 4.
+> Recovery adjustment within the [eight-week endurance build](calendar-2026-09-28-to-11-22.md).
+> Evidence: [October 4 review](../reviews/2026-10-04.md).
+> No scheduled races. Supersedes the provisional 74 km week.
+> Availability update: October 10–12 reserved as days off training, including Monday of the following week.
 
-Hold overall distance near last week's 65.51 km while restoring controlled effort:
-last Thursday was RPE 7–8 and Sunday's finish RPE 5–6. Current report: legs feel
-good, good sleep, light fatigue, stable resting HR, HRV 61. One threshold workout,
-one entirely easy long run, and Friday rest; no VO₂max session or strides this week.
+New bilateral shin pain after Sunday's 25.04 km run triggers the plan's shin-soreness rule. Prioritize symptom resolution and gradual return. No threshold, VO2max, strides or long run this week. **No mileage target to achieve.** The runs are conditional opportunities, not a prediction of recovery by Wednesday.
 
 | Date | Type | Distance | Target pace | Target HR | Purpose |
 |------|------|----------|-------------|-----------|---------|
-| 2026-09-28 Mon | Completed recovery run/walk | 8.0888 km recorded, includes walking | Actual 8:24/km overall; reported RPE 1; no additional run | Actual average 79.9, maximum 119 bpm | Gentle movement after Sunday's long run; completed activity, not a pace prescription. |
-| 2026-09-29 Tue | Threshold | Approximately 11.5 km | 3 km Easy at 4:30–4:55/km; 3×6 min at 3:46–3:53/km; 2 min Recovery jog at 5:00–5:30/km between reps; 3 km Easy cool-down | Easy <148; reps 158–165 reference after settling; Recovery jog <132 bpm target | Controlled threshold, RPE about 6; start near 3:53/km and finish with reserve. |
-| 2026-09-30 Wed | Easy | 8 km | 4:30–4:55/km; RPE 2–3 | <148 bpm | Comfortable aerobic running; check next-morning response to threshold. |
-| 2026-10-01 Thu | Easy | 10 km | 4:30–4:55/km; RPE 2–3 | <148 bpm | Maintain aerobic volume without a second quality session. |
-| 2026-10-02 Fri | Rest | 0 km | — | — | Absorb the week's work before the weekend. |
-| 2026-10-03 Sat | Easy | 6.5 km | 4:30–4:55/km; RPE 2–3 | <148 bpm | Short, relaxed run to preserve freshness for Sunday. |
-| 2026-10-04 Sun | Long run (Easy) | Up to 22 km | 4:30–4:55/km; start near the slower end; RPE 2–3 throughout | <148 bpm | Extend endurance slightly from 21.11 km while keeping the whole run conversational. |
+| 2026-10-05 Mon | Rest | 0 km running | — | — | Unload after Sunday and check next-morning symptoms. |
+| 2026-10-06 Tue | Rest | 0 km running | — | — | Let symptoms settle; omit threshold. |
+| 2026-10-07 Wed | Recovery, conditional | Up to 20 min; approximately 3.6–4.0 km | 5:00–5:30/km reference; RPE 1–2 | <132 bpm | Short gentle return only if the entry gate below is met; otherwise rest. |
+| 2026-10-08 Thu | Rest | 0 km running | — | — | Observe the morning-after response. |
+| 2026-10-09 Fri | Recovery, conditional | Up to 30 min; approximately 5.5–6.0 km | 5:00–5:30/km reference; RPE 1–2 | <132 bpm | Extend only after Wednesday was symptom-free during, afterward and next morning; otherwise rest and reassess. |
+| 2026-10-10 Sat | Rest | 0 km running | — | — | Planned weekend off; no scheduled training. |
+| 2026-10-11 Sun | Rest | 0 km running | — | — | Planned weekend off; omit Sunday running without moving it earlier. |
 
-**Weekly recorded activity-distance total: approximately 66.09 km**, consisting of
-Monday's 8.0888 km mixed run/walk plus approximately **58 km planned running** on
-Tuesday–Sunday. Six activity days including Monday, one rest day. The running-only
-weekly total is **58 km plus Monday's running portion**, which Strava's summary does
-not separate; do not claim all 66.09 km as running. Do not add distance to compensate
-for Monday's walking or any shortened session. This implements the overview's
-approximately 66 km week as a conservative workload ceiling.
+**Weekly running: 0 to 50 minutes.** Completing both full durations at reference pace gives approximately **9.1–10.0 km**, midpoint **9.52 km**. Slower running, walk breaks or stopping early reduce running distance. All warm-up and cool-down jogging is inside these time caps. No obligation to complete any session or accumulate these kilometres.
 
-## Tuesday execution and fallback
+**Following Monday, 2026-10-12: Rest, 0 km running**, no pace/HR target. This is the third planned day off and must be carried into the October 12–18 prescription. No scheduled cross-training or make-up session on October 10–12.
 
-- Proceed only if light fatigue has cleared, legs are comfortable, sleep remains
-  good, and the route is safe. If fatigue persists, replace the entire workout with
-  **10 km Easy at 4:30–4:55/km, HR <148, RPE 2–3**, or rest if unwell/painful.
-  Do not move threshold later in the week.
-- Three 6-minute reps, exactly **two** 2-minute recovery jogs. No final fast rep.
-  Use the timer and a measured route where possible; ignore unstable instantaneous
-  GPS pace. Slow or stop the reps if effort rises above controlled RPE about 6.
-- HR is supporting information, not a number to chase. It may remain above the
-  Recovery ceiling early in a short jog; ease down or walk as needed, never speed
-  up to manipulate the reading.
-- Distance estimate: 3 km warm-up + 4.64–4.78 km reps + 0.73–0.80 km jogs +
-  3 km cool-down = **11.36–11.58 km**. Midpoint estimate **11.47 km**, rounded to
-  **11.5 km**. Complete the timed workout and cool-down; no extra metres to force
-  exactly 11.5 km. All components are included in the weekly total.
+## Entry and stop rules
 
-## Recovery and long-run gates
+- Monday and Tuesday are rest from running. Ordinary walking is fine while comfortable; do not replace mileage with long walks or extra leg work.
+- Before the first run, the current shin discomfort must have settled, including on waking and during ordinary walking/stairs, without relying on massage or painkillers to mask it. Normal walking while shin soreness remains does not satisfy the gate. If uncertain, rest and seek assessment rather than using a run as a diagnostic test.
+- If pain remains on Wednesday (approximately three days after Sunday), follow the existing project rule: no running and arrange a sports physio/clinician assessment. Do not automatically restart later in the week without reassessment.
+- Stop if shin pain returns during a run. Pain afterward or the next morning also cancels further running pending reassessment. Do not run through 2–3/10 pain or resume after massaging it away.
+- Do not skip straight to Friday's 30 minutes if Wednesday was missed. A delayed return needs a new check and starts with the short exposure.
+- Worsening pain, a small sharply tender spot, swelling, pain with walking/at rest or changed gait warrants prompt clinical assessment. This plan does not diagnose shin splints or exclude a bone-stress injury.
 
-- Pace and HR never override effort. Slow beyond the listed bands when necessary;
-  Easy means genuinely conversational. No steady finishes, hill workouts or strides.
-- If Wednesday feels harder than Easy, reduce it or rest. Do not redistribute the
-  removed distance to Thursday or Saturday.
-- Run Sunday's full 22 km only if the week's sessions leave normal energy and
-  comfortable legs. Otherwise cap it at **18–20 km**, or shorten further if needed.
-  Do not push through a repeat RPE 5–6 finish to reach the distance. No fast finish.
-- Use familiar gels and fluids on Sunday. Avoid adding unfamiliar heavy strength
-  work; familiar light maintenance is enough.
-- New shin/calf pain stops progression. Stop for gait-changing pain; persistent or
-  gait-changing pain warrants professional assessment.
+## Execution and the general plan
 
-## Verification and next check
+Use a familiar flat route. Recovery pace is a reference, HR a ceiling; slower is fine. No fast finish, hills, jumping or leg-strength work that provokes symptoms. On available days, gentle non-impact activity is optional only if entirely symptom-free; there is no cross-training quota.
 
-The fallback Tuesday lowers the recorded-distance total to approximately **64.59 km**.
-Shortening Sunday to 18–20 km lowers the main plan to approximately **62.09–64.09 km**;
-with both changes, approximately **60.59–62.59 km**. All include Monday's walking.
+This is a temporary symptom-management schedule, not a master-plan requirement to reduce the entire week this far. Reassess after Monday/Tuesday before any increase; the new weekend break is not a reason to compress training into Wednesday–Friday.
 
-Report Tuesday rep pace/RPE and next-morning response; review Sunday effort and
-recovery before advancing to week 2. Monday source: Strava activity
-[20360022743](https://www.strava.com/activities/20360022743), retrieved September 28,
-Europe/Kyiv. The binding prescription is this file, not historical translated plans.
+Review symptoms Monday/Tuesday and before returning to running, then review the response before committing October 12–18. October 12 remains a day off; October 13 is the earliest available return date after the break, subject to symptoms and reassessment, not automatic authorization for a workout. Its provisional 82 km, intervals and 26 km long run are not automatically authorized. Resume building from tolerated actual running; do not catch up distance. Keep the October 19–25 recovery checkpoint and delay later milestones. The overall endurance goal and zones remain unchanged.
+
+This adjustment follows the master plan's shin-soreness override and [NHS guidance](https://www.nhs.uk/conditions/shin-splints/) to avoid provoking exercise, return gradually and seek assessment if symptoms do not improve. Passing a short run does not clear the original mileage.
+
+## Distance calculation
+
+At Recovery pace 5:00–5:30/km: 20 minutes = 3.64–4.00 km; 30 minutes = 5.45–6.00 km. At the 5:15/km midpoint, the unrounded session distances sum to **9.52 km**. Total range from unrounded values: **9.09–10.00 km**. Rest days contribute zero. These figures apply only when all full running durations are completed.
