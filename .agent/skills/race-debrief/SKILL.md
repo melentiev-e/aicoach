@@ -5,53 +5,44 @@ description: Use after a race to produce an honest post-race analysis — execut
 
 # Race debrief
 
-Honest post-race analysis. The point is learning, not consolation — record what
-actually happened so the next block is smarter.
+An honest, analytical post-race debrief. The primary focus is objective learning to ensure subsequent training blocks are smarter and more targeted.
 
 ## Read first
-- `races/<race>-strategy.md` (what was planned).
-- The race activity file in `logs/activities/` — read lap-by-lap pace and HR
-  (per-segment splits are essential here).
-- Ask the athlete for post-race wellness context: how legs felt, fueling execution,
-  any GI issues, weather impact.
+- `races/<race>-strategy.md` (the tactical plan prepared prior to the race).
+- `athlete.md` (race history and current pace zones).
+- Race activity data retrieved via **Garmin API** (or **Strava API**).
 
-## Required interview — before coaching decisions
-
-Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
-existing context, ask focused follow-ups, and **wait for answers** before dependent
-recommendations or writes. Current answers already supplied satisfy the interview;
-read-only data inspection may continue while waiting.
-
-Confirm the race/activity and official result if missing. Ask for the athlete's
-account of effort by stage (especially the finish), pacing decisions, actual fuel
-and fluids, GI issues, weather/stops, pain and current recovery, and their main
-lessons. Complete this interview before assigning causes, judging fitness or
-writing lessons for the next block; splits alone do not explain why a race unfolded.
+## Athlete interview (focused)
+Ask for immediate subjective impressions:
+1. **Perceived effort & pacing breakdown:** Where did the race feel controlled, and where did it become difficult? How did the final 10 km unfold?
+2. **Fueling & GI execution:** Did carb and fluid intake go according to plan? Any gastrointestinal distress?
+3. **Physical & musculoskeletal status:** Any cramps, acute joint/tendon pain, or blisters?
+4. **External conditions:** How did real-world weather or pack dynamics affect pacing?
 
 ## Steps
 
-1. **Identify the race file.** Ask the athlete which `activity_<id>.csv` is the race.
-   Derive the activity summary (§6): total distance, total time, avg pace, avg HR,
-   max HR, elevation. Then read lap-by-lap for the full execution picture.
+1. **Retrieve and analyze race activity data:**
+   - Fetch official race activity from **Garmin API** (primary) or **Strava API** (`strava-activities`).
+   - Analyze overall time, average pace, average/max HR, and lap/5k split pacing consistency.
+   - Look closely at segment pacing (e.g. first half vs second half split; kilometers 32–42 pace drop-off).
 
-2. **Result vs goal.** Finishing time vs A/B/C goals and the pre-race prognosis.
+2. **Evaluate execution vs strategy:**
+   - Compare actual splits against the pre-race pacing plan in `races/<race>-strategy.md`.
+   - Identify whether early discipline was maintained or if aggressive opening miles led to late deceleration.
 
-3. **Execution vs strategy.** Segment-by-segment: did pacing hold? Where did it
-   unravel and why? How did the last 10 km feel (§3 tracks this)? Read the lap data,
-   not just the finish time.
+3. **Evaluate fueling & environment:**
+   - Cross-reference energy levels with actual carb/fluid consumption reported by the athlete.
 
-4. **Fueling & conditions.** Did the fuel/hydration plan work? Gut issues? How did
-   weather affect execution? Use athlete's post-race report.
+4. **Derive fitness insights:**
+   - What does this result prove about current aerobic capacity, lactate threshold, and marathon-specific endurance?
+   - Compare outcome against existing anchors in `athlete.md`.
 
-5. **What it says about fitness.** Does the result confirm, beat, or contradict the
-   current trajectory toward 2:39? Be honest — this may feed a `phase-review` and a
-   goal re-judgement.
+5. **Formulate concrete takeaways:**
+   - Define 2–3 actionable lessons for the next training cycle (e.g., pacing discipline, fueling adjustments, or specific aerobic build needs).
+   - If performance materially shifted fitness markers, recommend running `phase-review` to update `athlete.md` and `plan/master-plan.md`.
 
-6. **Lessons → next block.** Concrete carry-forwards (pacing discipline, fueling
-   tweaks, workout gaps exposed).
-
-7. **Write** `races/<race>-debrief.md`. If the result warrants a plan or goal change,
-   flag it and recommend `phase-review`.
+## Communication
+- Provide a supportive, direct, and evidence-grounded debrief in **Ukrainian**.
 
 ## May write
-`races/<race>-debrief.md`.
+- `races/<race>-debrief.md`

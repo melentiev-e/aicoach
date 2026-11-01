@@ -1,73 +1,57 @@
 ---
 name: daily-check
-description: Use after the athlete drops a new Garmin activity CSV to read the latest run, match it against today's prescription, surface pace-at-HR and recovery red flags, and PROPOSE (never apply) an in-week adjustment. Trigger daily or whenever the athlete brings a new activity.
+description: Use on-demand when the athlete reaches out after a workout with questions, doubts about execution/quality, or reports pain/fatigue requiring an in-week adjustment. Skipped if the run went as planned and the athlete has no questions.
 ---
 
 # Daily check
 
-A lightweight situational read of the most recent activity. It never edits the plan —
-it reports and proposes. Only `weekly-review` commits changes (athlete confirms any
-in-week swap).
+An **optional, on-demand** situational review of a recent workout. It never edits the plan autonomously — it analyzes, reports, and proposes adjustments. The athlete must explicitly confirm any in-week schedule change.
+
+> **Cadence note:** Skipped on regular days when the workout went according to plan, the athlete feels fine, and has no questions. Triggered only when the athlete reaches out with questions, doubts about session execution/quality, or reports pain/fatigue.
 
 ## Read first
-- `CLAUDE.md` §6 (how to read Garmin CSV data), §8 (decision rules).
-- `plan/current-week.md` (today's prescription).
-- The newest file(s) in `logs/activities/` — identify the relevant one(s) by activity
-  ID or by what the athlete mentions in conversation.
+- `AGENTS.md` (§6 Evaluation Framework, §7 Decision Rules).
+- `athlete.md` (Current Pace & HR zones, injury history).
+- `plan/current-week.md` (prescription for today and the remaining week).
 
-## Required interview — before coaching decisions
+## Interaction (focused & direct)
+Ask only for missing subjective context:
+1. **RPE (1–10)** and overall perceived effort.
+2. **Tissue feel / pain (0–10):** Any localized calf, Achilles, shin, knee tightness or discomfort? Any sensation during or after running?
 
-Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
-existing context, ask focused follow-ups, and **wait for answers** before dependent
-recommendations or writes. Current answers already supplied satisfy the interview;
-read-only data inspection may continue while waiting.
-
-Establish activity/date and intended session only if not already known. Ask about
-RPE, pain during/after the run and next-morning response when available, fatigue,
-sleep/recovery, and reasons for material deviations (conditions, fueling or stops).
-Ask about near-term constraints only if an adjustment depends on them. Complete
-this interview before the coaching assessment or adjustment proposal. Later RPE
-and wellness steps reuse these answers rather than repeating the questions.
+If the athlete already provided this context in their message, proceed immediately with the assessment without re-asking.
 
 ## Steps
 
-1. **Identify the activity.** If the athlete hasn't said which file or which date,
-   ask: "Which activity CSV is this, and what date/session type was it?" Do not guess
-   the date from the filename.
+1. **Retrieve the activity via API:**
+   - Fetch the latest run from **Garmin API** (primary) or **Strava API** (`strava-activities` as fallback).
+   - Retrieve total distance, moving time, average pace, average/max HR, lap-by-lap splits, and Garmin metrics: Aerobic & Anaerobic Training Effect (TE) and Workout Execution Score.
+   - If available, review current Garmin recovery signals (morning RHR, HRV status, Body Battery).
 
-2. **Derive the activity summary** (§6):
-   - Total distance = sum of `Distance km` across all lap rows.
-   - Total time = `Cumulative Time` of the last row.
-   - Avg pace = recalculate from total distance / total time.
-   - Avg HR = weighted average of `Avg HR bpm` (weighted by `Distance km`).
-   - Max HR = max of `Max HR bpm`.
-   - Elevation = sum of `Total Ascent m`.
+2. **Match execution to prescription:**
+   - Compare actual workout to today's entry in `plan/current-week.md`.
+   - Check if target pace and target HR were adhered to. For quality workouts, inspect individual lap reps (did the athlete run too fast or drift above target HR?).
 
-3. **Match to prescription.** Find the prescribed session for the activity's date in
-   `current-week.md`. Compare actual vs target distance, pace range, and HR range.
-   For interval sessions, read lap-by-lap pace and HR to check each rep — not just
-   the average.
+3. **Evaluate Pace-at-HR & aerobic efficiency:**
+   - Check Pace-at-HR: was effort normal for this pace?
+   - Look for cardiac drift / aerobic decoupling (>5% HR increase at steady pace).
 
-4. **Read pace-at-HR.** Note effort vs. recent norms (same pace at lower HR =
-   improving; drifting up = fatigue). This is the single most informative signal (§6).
+4. **Screen for red flags (`AGENTS.md §7`):**
+   - Elevated RHR or depressed HRV status.
+   - Unusually high RPE for easy/recovery paces.
+   - Any sharp, localized tendon or muscle discomfort, or any gait alteration (**immediate stop / rest**).
 
-5. **Ask for wellness context** if not provided: resting HR, HRV, sleep quality, Body
-   Battery, soreness. One question, not a form — "how are you feeling / any flags?"
+5. **Report & propose:**
+   - Provide a concise assessment in **Ukrainian** leading with the bottom line:
+     - How well the session met its physiological purpose.
+     - Evaluation of Garmin Training Effect & Execution Score.
+     - Tissue safety evaluation.
+   - If red flags fire or accumulated fatigue is evident, **propose** a concrete in-week adjustment to `plan/current-week.md` (e.g. swapping a quality session for recovery or rest).
+   - Do **not** modify `plan/current-week.md` proactively. Ask for the athlete's confirmation first.
 
-6. **Check red flags (§8).** Elevated resting HR, low HRV, stacked poor sleep, low
-   Body Battery; RPE drifting up; any pain that alters gait; illness.
-
-7. **Ask for RPE and notes** if not provided.
-
-8. **Report + propose.** Lead with the assessment, tie it to the data. If a red flag
-   fires, **propose** a specific in-week adjustment (e.g. "swap tomorrow's threshold
-   for easy 8k") and ask the athlete to confirm. Do **not** edit `current-week.md`
-   on your own initiative. Be quicker to recommend rest than the athlete wants.
-
-9. **If confirmed, apply it.** Once the athlete explicitly confirms the proposed
-   adjustment, edit `current-week.md` to reflect it, then immediately invoke
-   `verify-week` before treating the change as final.
+6. **Apply confirmed adjustments:**
+   - Once the athlete explicitly confirms the proposed change, update `plan/current-week.md`.
+   - Immediately invoke `verify-week` to validate that the updated week remains consistent with `athlete.md`.
 
 ## May write
-`current-week.md` — only the specific adjustment the athlete just confirmed, never
-proactively. Must be followed by `verify-week` when it does.
+- `plan/current-week.md` — only an adjustment explicitly confirmed by the athlete, followed by mandatory `verify-week`.

@@ -5,44 +5,38 @@ description: Use on demand to expand the master plan into a detailed, provisiona
 
 # Build calendar
 
-Expands the coarse arc into concrete sessions for a chosen span. The output is
-**provisional** — a draft to look ahead and plan around. It is never binding; only
-`weekly-review` commits a week into `current-week.md`.
+Expands the macrocycle roadmap in `plan/master-plan.md` into concrete, day-by-day sessions for a requested span (e.g., upcoming month or multi-week block).
+
+> **Provisional status:** The resulting calendar is strictly a **provisional forward-looking draft**. It is never binding; only `weekly-review` commits the active week into `plan/current-week.md` based on real-time recovery.
 
 ## Read first
-- `CLAUDE.md` §5 (methodology, pace zones), §10 (output conventions).
-- `plan/master-plan.md` (the arc + current phase), pace zones in `CLAUDE.md`.
-- Latest fitness/wellness context in conversation and recent reviews (check dates;
-  old observations do not establish current readiness).
+- `athlete.md` (Current Pace & HR Zones, preferences, and availability).
+- `plan/master-plan.md` (Current phase, volume band, and workout focus).
+- `AGENTS.md` (§3 Project Architecture, §5 Training Methodology).
 
-## Required interview — before coaching decisions
-
-Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
-existing context, ask focused follow-ups, and **wait for answers** before dependent
-recommendations or writes. Current answers already supplied satisfy the interview;
-read-only data inspection may continue while waiting.
-
-Cover the requested dates, available days/time limits and long-run preference,
-duty/travel or other physical load, current symptoms/recovery, and any changed
-race/date or priorities. Reuse a recent completed weekly/phase interview and ask
-only for changes. Complete the interview before writing even a provisional draft;
-readiness must come from current conversation, not assumed from old CSV entries.
+## Athlete interview (focused)
+Clarify scheduling constraints for the requested span:
+1. **Target span:** Which weeks or month are being drafted?
+2. **Logistical constraints:** Any planned travel, busy work days, or preferred days for long runs / rest days?
 
 ## Steps
 
-1. **Ask the span** if not given: a week or a month (or a named training block).
+1. **Review phase parameters:**
+   - Check `plan/master-plan.md` for target weekly mileage bands and key session types for this phase.
+   - Reference the active pace and HR zones defined in `athlete.md`.
 
-2. **Expand the arc.** For each day in the span, lay out a concrete session consistent
-   with the phase focus and volume band: day | type | distance | target pace | target
-   HR | purpose. Respect ~80/20 intensity, recovery weeks every 3–4 weeks, the long-run
-   day, and the athlete's weekly availability/constraints (§3).
+2. **Draft the day-by-day schedule:**
+   - Structure each week adhering to the ~80/20 intensity distribution.
+   - Design sessions with date, type, planned distance, target pace, target HR, and purpose.
+   - Incorporate a scheduled recovery week every 3–4 weeks.
+   - Respect musculoskeletal durability: never inflate volume arbitrarily just to reach a round number.
 
-3. **Stay within durability.** Don't exceed the master plan's volume band to chase a
-   number. Mark recovery weeks explicitly.
+3. **Output the provisional calendar:**
+   - Save the draft to `plan/calendar-<span>.md` (e.g. `plan/calendar-2026-11.md`).
+   - Add a clear header noting that dates and sessions are provisional drafts subject to weekly adaptation in `plan/current-week.md`.
 
-4. **Write the draft** to `plan/calendar-<span>.md` (e.g. `calendar-2026-06.md`). State
-   at the top that it is provisional and will be re-checked week by week before any week
-   is committed.
+## Communication
+- Present a clear summary of the planned block in **Ukrainian**, highlighting phase objectives, volume trajectory, and key workout focus.
 
 ## May write
-`plan/calendar-<span>.md` only — provisional. Never `current-week.md` or `master-plan.md`.
+- `plan/calendar-<span>.md` only. Never `plan/current-week.md` or `plan/master-plan.md`.

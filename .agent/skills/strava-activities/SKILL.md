@@ -5,7 +5,7 @@ description: Retrieve the athlete's Strava activities for a date range or by act
 
 # Retrieve Strava activities
 
-Read project context in `CLAUDE.md`, the request and relevant existing reviews.
+Read project context in `AGENTS.md`, the request and relevant existing reviews.
 Use [strava-auth](../strava-auth/SKILL.md) when access needs setup or refresh.
 The project authorizes direct Strava reads and local evidence storage. No Strava
 activity creation, edits, deletion, uploads, kudos or comments are in scope.

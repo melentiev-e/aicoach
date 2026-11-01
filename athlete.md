@@ -8,12 +8,9 @@
 ## Identity
 
 - **Handle:** Miller
-- **Goal race date:** October 10, 2026 — half-marathon focus requested September 17; event entry/distance availability unconfirmed.
 - **Current ambition:** Beat HM PB 1:15:32; stretch goal awaiting current workout evidence. Marathon goals deferred.
 - **Age / Sex:** 34, male
-- **Weight:** 80 kg
-- **Location (current):** Balakliiskyi raion, Kharkiv Oblast, Ukraine (military service)
-- **Location (home):** Kyiv, Ukraine (inferred from Kyiv races and training history)
+- **Weight:** 76 kg
 
 ---
 
@@ -50,9 +47,8 @@
 - Highest confirmed week: ~95 km (week of 2025-12-16)
 - Appeared structured with varied session lengths; no data on intensity distribution
 
-### Military service disruption (approx. Feb – Apr 2026)
+### Disruption (approx. Feb – Apr 2026)
 - Training volume dropped sharply from ~80 km to 15–35 km/week
-- Running location changed to Balakliiskyi raion (Kharkiv Oblast)
 - No quality sessions visible — exclusively moderate-effort runs
 - A gap of roughly 10 weeks of near-zero structured training (wk 6–15, 2026)
 
@@ -61,10 +57,6 @@
 - All sessions at moderate grey-zone paces (4:30–5:10/km, HR 131–161)
 - Long runs returning: 19 km (May 31), 21.2 km (Jun 7)
 - No track, no quality sessions — monotony 49%
-
-### Data anomalies noted
-- Three activities dated "2028-03-10" (Kyiv titles, structured workouts including "5 x 8' / 2'" and "MP Continuous") — likely timestamp corruption; appear to be genuine training from early 2026 (pre-deployment Kyiv period)
-- Activity 2026-03-06 "Barnet Running" 22.7 km at 3:06/km pace — clearly a data error (GPS artifact or wrong sport type); disregard for training analysis
 
 ---
 
@@ -87,25 +79,12 @@
 
 ---
 
-## Injury History
-
-- **Pattern:** Shin splints + medial/lateral tibial syndromes 2–3×/year, coinciding with training peaks
-- **Risk factors identified:**
-  - Asphalt-only running surface
-  - No track or soft surface access
-  - History of rapid volume increases during build phases
-- **Current status (Jun 2026):** No symptoms
-- **Mitigation:** Conservative volume build (max +10–12 km/week), monitor any shin soreness as a hard stop signal, calf/tibialis anterior strengthening recommended
-
----
-
 ## Training Preferences & Constraints
 
 - **Available days:** 6–7/week
 - **Doubles:** Possible if needed
 - **Long run day:** Sunday
 - **Surface:** Asphalt roads only (no track, no trails currently)
-- **Military service context:** Currently has training time; constraints may change — flag any schedule disruptions promptly
 - **Strengths / weaknesses:** Not self-reported — will emerge from training data
 
 ---
@@ -114,6 +93,22 @@
 
 - Gels used in training and tolerated well — no GI issues reported
 - No specific brand or protocol recorded yet — establish during long run build
+
+---
+
+## Current Pace & Heart Rate Zones
+
+> Anchored on LT ~3:48/km @ 160–162 bpm; Max HR ~185 bpm; Resting HR ~36–40 bpm.
+> Source of truth for training prescriptions and zone verification.
+
+| Zone | Purpose | Current Pace | Target HR |
+|------|---------|--------------|-----------|
+| Easy | Aerobic base building | 4:30–4:55/km | < 148 bpm |
+| Recovery | Active recovery, between/after quality | 5:00–5:30/km | < 132 bpm |
+| Marathon (MP) | Goal-specific pace | 3:52/km (primary); 3:55–4:02/km (sustainable) | ~150–158 bpm |
+| Threshold (T) | Lactate threshold (LT / MLSS) | 3:46–3:53/km (anchor ~3:48 @ 160–162) | 158–165 bpm |
+| VO2max (I) | Aerobic ceiling | 3:18–3:28/km | 176–185 bpm |
+| Reps (R) | Speed & running economy | 3:02–3:14/km | Effort-based |
 
 ---
 

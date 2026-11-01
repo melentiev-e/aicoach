@@ -5,58 +5,50 @@ description: Use ONCE at the start of the coaching relationship to set up the at
 
 # Intake
 
-First-run setup. Run this exactly once, when the project is new. After this, the
-weekly loop takes over.
+The initial onboarding skill. Run once at the beginning of the coaching relationship to establish the athlete profile, derive pace zones, calibrate goals, and generate the initial training plans.
 
 ## Read first
-- `CLAUDE.md` in full (your operating manual — role, methodology, decision rules).
+- `AGENTS.md` (Role, Coaching Philosophy, Architecture, and Methodology).
 
-## Required interview — before coaching decisions
-
-Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
-existing context, ask focused follow-ups, and **wait for answers** before dependent
-recommendations or writes. Current answers already supplied satisfy the interview;
-read-only data inspection may continue while waiting.
-
-Cover missing profile details: race/date and goal priorities, running and race
-history, recent training, injury/current symptoms, recovery, available days and
-facilities, life constraints, fueling experience and current fitness markers.
-Complete this interview before deriving zones or building the first plan.
+## Athlete intake interview
+Conduct a conversational, structured intake covering:
+1. **Goals & timeline:** Target race, distance, target time, and date.
+2. **Race history & PBs:** Recent and lifetime PBs (5k, 10k, HM, Marathon), including pacing feel and race conditions.
+3. **Current training & volume:** Average weekly mileage over the last 4–12 weeks, longest recent runs, session types, and consistency.
+4. **Physiological baselines:** Observed max HR, baseline resting HR, typical HRV, and any known Garmin/Runalyze VO2max or LT estimates.
+5. **Injury & durability profile:** Previous running injuries, current muscle or tendon vulnerabilities (calves, Achilles, knees, shins).
+6. **Logistics & preferences:** Available running days per week, preferred long run day, terrain, and cross-training habits.
+7. **Fueling & gear:** Experience with gels/hydration during long runs, GI tolerance.
 
 ## Steps
 
-1. **Fill the athlete profile.** Interview the athlete and complete every `[FILL IN]`
-   in `CLAUDE.md` §3, plus `athlete.md` (expanded profile + history). Do not invent
-   values — ask. Convert any relative dates to absolute.
+1. **Populate `athlete.md`:**
+   - Create or update the complete profile in **`athlete.md`** (Identity, Running History, Physiology, Constraints, and Coaching Notes).
+   - This file serves as the permanent single source of truth for the athlete's parameters.
 
-2. **Establish the current fitness snapshot.** Ask the athlete to provide a RUNALYZE
-   snapshot (or paste their numbers): Effective VO2max, Marathon Shape %, race
-   prognosis (M and HM), CTL/ATL/TSB, max/resting HR, threshold pace & HR. Also ask
-   for Garmin VO2max and LT pace if available. Record these in `CLAUDE.md` §3.
+2. **Conduct an honest goal evaluation:**
+   - Assess current fitness vs the goal time using equivalent race performances and aerobic endurance indicators.
+   - If the goal is overly aggressive for the timeline, state this honestly and propose a calibrated target or multi-cycle progression.
 
-3. **Judge the goal honestly.** Compare the RUNALYZE race prognosis + best recent race
-   against the 2:39 target on the available timeline (§8 "adjust the goal"). If there's
-   a large gap, say so plainly and propose a revised target or extended runway. Do not
-   rubber-stamp 2:39.
+3. **Derive initial pace & HR zones:**
+   - Derive the six core training zones (Easy, Recovery, Marathon Pace, Threshold, VO2max, Reps) from current fitness markers.
+   - Record these in the `Current Pace & Heart Rate Zones` table within **`athlete.md`**.
 
-4. **Derive pace zones** (`CLAUDE.md` §5) from the current fitness number. Fill the
-   Easy/MP/Threshold/VO2max/Reps table. These become the reference for every
-   prescription.
+4. **Construct the macrocycle roadmap:**
+   - Draft `plan/master-plan.md` detailing the periodization phases (Base, Strength/Hills, Specific, Taper) up to race day, with volume bands gated by tissue durability.
 
-5. **Build the arc.** Write `plan/master-plan.md` — the periodized phases to race day
-   (§5), with weekly volume bands gated by the athlete's durability (never jump the
-   band to chase a number).
+5. **Commit the first training week:**
+   - Create the initial binding prescription in `plan/current-week.md`.
+   - Run `verify-week` to ensure zone consistency and distance arithmetic.
 
-6. **Commit week one.** Hand off to `build-calendar` for a provisional first block,
-   then commit `plan/current-week.md` (date-keyed table: date | type | distance |
-   target pace | target HR | purpose).
+6. **Establish API data flow:**
+   - Explain the data retrieval process: training and recovery data flow automatically via **Garmin API** (primary) and **Strava API** (auxiliary via `strava-auth`).
+   - Remind the athlete that subjective inputs (RPE, tendon/muscle feel 0–10, life context) are simply shared in conversation. No manual CSV exports are required.
 
-7. **Confirm the data flow.** Explain to the athlete:
-   - After each run: export the activity from Garmin Connect as a per-lap CSV and drop
-     it into `logs/activities/`.
-   - When triggering a daily-check or weekly-review: mention the activity filename(s),
-     the date(s) they occurred, session type, RPE, and any wellness context (sleep, HRV,
-     soreness). No CSV to fill — just tell the coach in conversation.
+## Communication
+- Conduct the intake and deliver all initial plans in **Ukrainian**.
 
 ## May write
-`athlete.md`, §3 + pace zones in `CLAUDE.md`, the first `plan/master-plan.md`.
+- `athlete.md`
+- `plan/master-plan.md`
+- `plan/current-week.md`

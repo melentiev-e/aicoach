@@ -5,56 +5,46 @@ description: Use every 4-6 weeks OR on demand after a material fitness change (b
 
 # Phase review
 
-The reassessment skill — also the "update the program to current shape" skill. Two
-triggers, same logic: scheduled every 4–6 weeks, or on demand when fitness moves
-materially. Don't chase a single workout; act on sustained movement in the markers.
+The mesocycle reassessment skill. Used every 4–6 weeks or on demand when fitness moves materially. Do not swing zones based on a single good or bad session; act only on sustained evidence across multiple workouts, field tests, or races.
 
 ## Read first
-- `CLAUDE.md` §5 (methodology + zones), §8 (adjust paces / adjust goal).
-- `plan/master-plan.md`, recent `reviews/`.
-- `athlete.md` and §3 fitness snapshot block.
+- `AGENTS.md` (§3 Architecture & Sources of Truth, §5 Methodology, §7 Decision Rules).
+- `athlete.md` (Current Pace & HR zones, physiological baseline, injury history).
+- `plan/master-plan.md` (Macrocycle periodization arc).
+- Recent weekly reviews and execution trends.
 
-## Required interview — before coaching decisions
-
-Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
-existing context, ask focused follow-ups, and **wait for answers** before dependent
-recommendations or writes. Current answers already supplied satisfy the interview;
-read-only data inspection may continue while waiting.
-
-Cover current fitness markers and their dates, recent key-session/race effort,
-health and recovery, training interruptions, upcoming constraints, confirmed race
-date and goal priorities. Explore why markers or execution changed before revising
-zones, judging the goal or changing the master plan. Unavailable device metrics
-may remain unknown; they are not a reason to skip the athlete's context.
+## Athlete interview (focused)
+Ask only for missing or updated mesocycle context:
+1. **Fresh fitness markers:** Any new Garmin or Runalyze metrics (VO2max, LT pace/HR), or recent breakthrough race/time-trial performances?
+2. **Durability & recovery status:** How did the tissues hold up during the completed block? Any lingering soreness or tightness?
+3. **Upcoming constraints:** Any changes to availability, upcoming travel, or target race schedule?
 
 ## Steps
 
-1. **Gather the fitness snapshot.** Ask the athlete to provide current RUNALYZE numbers:
-   Effective VO2max, Marathon Shape %, race prognosis (M and HM), CTL/ATL/TSB, and
-   threshold pace & HR. Also ask for any Garmin fitness indicators (Garmin VO2max, LT
-   pace). If the athlete doesn't have fresh numbers, work from the §3 snapshot and any
-   recent race or workout performances.
+1. **Synthesize recent performances & fitness data:**
+   - Review sustained threshold reps, race performances, Pace-at-HR trends, and recovery metrics over the last mesocycle.
+   - Contrast current markers against the baseline in `athlete.md`.
 
-2. **Re-read the trajectory.** Compare the current snapshot to §3 (the previous
-   snapshot) and the trend visible in recent weekly reviews. Where is the athlete
-   relative to the phase plan?
+2. **Re-derive pace & HR zones (if warranted):**
+   - If objective evidence confirms a fitness shift, recalculate the pace and HR bands.
+   - Update the `Current Pace & Heart Rate Zones` table in **`athlete.md`**.
+   - **Important:** Never write temporary fitness snapshots or active zones into `AGENTS.md`. `athlete.md` is the sole source of truth.
 
-3. **Re-derive pace zones** (§5) from the new fitness number if it moved materially.
-   Update the zone table in `CLAUDE.md` §5 and the §3 snapshot. Re-derive — don't
-   nudge.
+3. **Revise the master plan:**
+   - Adjust `plan/master-plan.md` for the upcoming phase (volume bands, phase focus, key workout structure).
+   - Ensure progressive overload respects tissue durability and incorporates recovery weeks every 3–4 weeks.
 
-4. **Revise the master plan.** Adjust `plan/master-plan.md` for the next block: phase
-   focus, volume band, key workout types. Treat it as a living document — revise and
-   date the change, don't rewrite from scratch.
+4. **Re-judge the goal (`AGENTS.md §7`):**
+   - Honestly evaluate whether current fitness progression aligns with the primary goal time on the remaining runway.
+   - If data consistently contradicts the goal, propose a realistic adjusted target or extended timeline plainly and directly.
 
-5. **Re-judge the goal (§8).** If across multiple checkpoints the prognosis and key
-   workouts consistently contradict 2:39, say so plainly and propose a revised target
-   or extended timeline. If on track, confirm it with the evidence.
+5. **Schedule tune-up races:**
+   - Identify appropriate placement for intermediate races or time trials in the upcoming phase if relevant.
 
-6. **Consider a tune-up race** if the phase calls for one.
-
-7. Note the reassessment in `reviews/YYYY-MM-DD-phase.md`.
+## Communication
+- Provide a structured assessment and updated recommendations in **Ukrainian**.
+- Highlight key wins, limiters, and the rationale for any zone or plan revisions.
 
 ## May write
-`plan/master-plan.md`, pace zones + §3 snapshot in `CLAUDE.md`, `athlete.md`,
-`reviews/YYYY-MM-DD-phase.md`.
+- `athlete.md` (Pace & HR zones, physiological profile, coaching notes).
+- `plan/master-plan.md` (Macrocycle and phase roadmap).

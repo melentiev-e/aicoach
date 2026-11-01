@@ -5,49 +5,48 @@ description: Use before a race (goal or tune-up) to build a segment pacing plan,
 
 # Race strategy
 
-Builds the pre-race plan. Used for the goal marathon and tune-up races alike (scale the
-detail to the stakes).
+Builds an evidence-based tactical race plan for upcoming goal marathons or tune-up races (scaled to race distance and stakes).
 
 ## Read first
-- `CLAUDE.md` §3 (goal time, fueling experience, gut tolerance), §5 (pace zones),
-  §7 (pre-race).
-- `athlete.md` for fueling history and prior race execution.
-- Any prior `races/<race>-debrief.md` for lessons learned.
+- `athlete.md` (Current Pace & HR zones, race history, fueling practices).
+- `AGENTS.md` (§5 Methodology, §6 Evaluation Framework).
+- Any prior race debriefs under `races/` for documented lessons learned.
 
-## Required interview — before coaching decisions
-
-Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
-existing context, ask focused follow-ups, and **wait for answers** before dependent
-recommendations or writes. Current answers already supplied satisfy the interview;
-read-only data inspection may continue while waiting.
-
-Confirm race/date/distance and goal priorities, recent fitness evidence, current
-health/recovery, course and expected conditions, travel/start logistics, and the
-athlete's practiced fueling/hydration quantities, products and gut tolerance.
-Discuss previous pacing problems and preferences. Verify externally available
-race facts rather than asking the athlete to supply everything. Resolve untested
-or unknown fueling assumptions before prescribing a race schedule.
+## Athlete interview (focused)
+Clarify key pre-race tactical details:
+1. **Target race & priorities:** Official course, start time, profile, and priority (A-goal vs B/C targets).
+2. **Recent workouts & readiness:** How did key race-pace sessions feel in the final weeks?
+3. **Practiced fueling protocol:** Specific gels/electrolytes tested in training, target grams of carbs per hour, fluid strategy.
+4. **Logistics & weather:** Expected temperature, humidity, wind, and course elevation profile.
 
 ## Steps
 
-1. **Set the target.** Ask the athlete for the latest RUNALYZE prognosis or recent
-   workout performance to confirm what fitness supports. Compare against the §3
-   snapshot. If fitness doesn't support the A-goal, set tiered A/B/C goals honestly.
+1. **Calibrate realistic race targets:**
+   - Anchor expectations on demonstrated workout evidence in `athlete.md`, not wishful thinking.
+   - Establish tiered goals:
+     - **Goal A:** Best-case realistic execution in optimal conditions.
+     - **Goal B:** Solid performance reflecting current baseline fitness.
+     - **Goal C:** Acceptable floor on a tough day or in adverse weather.
 
-2. **Segment pacing.** Break the race into segments with target pace/HR per segment,
-   accounting for course profile (hills, wind exposure) and a controlled early pace —
-   never bank time.
+2. **Develop segment pacing plan:**
+   - Break the race into distinct tactical segments (e.g., Opening 5k, 5k–Half, 21k–32k, Final 10k).
+   - Enforce conservative early pacing (never bank time in the first half).
+   - Adjust target paces for course topography (hills, sharp turns) and expected wind.
 
-3. **Fueling & hydration schedule.** Gels/carbs per hour and timing, fluid plan, tied
-   to the athlete's tested gut tolerance (§3). Only practiced strategies on race day.
+3. **Establish fueling & hydration schedule:**
+   - Define exact timing for carb intake (e.g. gel every 25–30 min / 50–60g carbs/hr).
+   - Prescribe hydration points based on aid station layouts. Enforce only tested protocols.
 
-4. **Weather contingencies.** Adjustments for heat/cold/wind — pace and fueling tweaks
-   per scenario.
+4. **Prepare weather & tactical contingencies:**
+   - Concrete pacing adjustments if heat, humidity, or heavy wind are forecast.
+   - Specific criteria for when to ease off pace before catastrophic blowup occurs.
 
-5. **Mental script.** Key checkpoints, mantras, how to respond when it gets hard, and
-   the abort/walk-back criteria.
+5. **Draft mental script:**
+   - Focus cues for tough sections (especially kilometers 30–40).
+   - Mantras and cognitive check-ins for maintaining relaxation and cadence.
 
-6. **Write** `races/<race>-strategy.md`.
+## Communication
+- Deliver the strategy as a structured, inspiring, and tactical document in **Ukrainian**.
 
 ## May write
-`races/<race>-strategy.md`.
+- `races/<race>-strategy.md`

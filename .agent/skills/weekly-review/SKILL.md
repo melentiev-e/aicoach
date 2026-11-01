@@ -1,75 +1,65 @@
 ---
 name: weekly-review
-description: Use weekly (the core coaching loop) to review the whole week's execution vs plan and trends, check wellness, write a dated review, and commit the next binding current-week.md. Trigger when the athlete brings the week's activities.
+description: Use weekly (the core coaching loop) to review the whole week's execution vs plan, evaluate Garmin quality & recovery metrics, check tissue status, and commit the next binding plan/current-week.md. Trigger on Sunday evening or Monday morning when reviewing the week.
 ---
 
 # Weekly review
 
-The core loop. The only skill that **commits** the binding `current-week.md`.
+The core coaching loop. The only skill that **commits** the binding `plan/current-week.md`.
 
 ## Read first
-- `CLAUDE.md` §6–§10.
-- `plan/current-week.md` (what was prescribed), `plan/master-plan.md` (where we are in
-  the arc), `plan/calendar-<span>.md` if a provisional draft exists.
-- All activity files in `logs/activities/` that belong to this week. If it is not
-  clear which files are this week's, ask the athlete to list them (by filename or date).
+- `AGENTS.md` (§5 Methodology, §6 Evaluation Framework, §7 Decision Rules, §8 Workflow).
+- `athlete.md` (Current Pace & HR zones, physiological baseline, injury history).
+- `plan/current-week.md` (what was prescribed for the active week).
+- `plan/master-plan.md` (current phase, volume band, macrocycle targets).
+- `plan/calendar-*.md` (if a provisional draft exists for the upcoming week).
 
-## Required interview — before coaching decisions
+## Athlete check-in (focused & concise)
+Do not send bureaucratic forms. If the athlete hasn't already provided subjective context, ask 1–2 direct questions:
+1. **Tissue status & leg feel:** Any localized soreness, calf/Achilles/shin tightness (0–10 scale)?
+2. **Overall fatigue & life context:** Fatigue levels, work stress, travel, or sleep disruptions?
 
-Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
-existing context, ask focused follow-ups, and **wait for answers** before dependent
-recommendations or writes. Current answers already supplied satisfy the interview;
-read-only data inspection may continue while waiting.
-
-Cover current pain and next-morning symptoms, sleep/fatigue and available HRV/RHR
-trends; session intent/RPE, reasons for deviations and relevant conditions; unlogged
-physical load; next week's availability; changed race goals/date and fresh fitness
-markers if available. Use the week's data to target follow-ups. Complete the
-interview before the final assessment and before any next-week prescription.
+Wait for the athlete's input on these questions before finalizing next week's prescription. Data fetching and preliminary calculations may proceed while waiting.
 
 ## Steps
 
-1. **Gather context.** Before diving into the data, ask (if not already provided):
-   - Which activity files are this week's (and on which dates)?
-   - Session types for each (Easy, Threshold, Long, etc.)?
-   - Wellness summary: resting HR trend, HRV, sleep, soreness, mood?
-   - Any RUNALYZE numbers if the athlete happened to check?
+1. **Retrieve the week's data:**
+   - **Activities:** Fetch all runs completed during the week via **Garmin API** (primary) or **Strava API** (`strava-activities` as fallback). Capture distance, time, pace, average/max HR, and lap splits for quality segments.
+   - **Health & Recovery:** Retrieve weekly trends for Resting HR (RHR), overnight HRV status, sleep score/quality, Body Battery, and Garmin training load.
 
-2. **Derive activity summaries.** For each activity file (§6):
-   - Total distance = sum of `Distance km`.
-   - Total time = `Cumulative Time` of last row.
-   - Avg pace = recalculate from distance / time.
-   - Avg HR = weighted average of `Avg HR bpm` (weighted by `Distance km`).
-   - Max HR = max of `Max HR bpm`.
-   - Elevation = sum of `Total Ascent m`.
-   For quality sessions, also read lap-by-lap to check rep execution.
+2. **Evaluate Garmin workout quality:**
+   - For quality and key sessions, evaluate Garmin Aerobic & Anaerobic Training Effect (TE) and Workout Execution Score.
+   - Check lap execution for interval or threshold reps (did they hold pace within target HR bands?).
 
-3. **Execution vs plan.** For each prescribed day, compare actual vs target (pace/HR
-   at the prescribed effort). Note hit/missed/modified sessions and sessions completed
-   vs planned (§9 logistics).
+3. **Analyze Pace-at-HR & aerobic efficiency:**
+   - Track Pace-at-HR trend against recent weeks (is the athlete running the same pace at a lower HR?).
+   - Check for aerobic decoupling (cardiac drift >5% during steady-state runs with flat elevation/even pace).
 
-4. **Trends.** Pace-at-HR over the last weeks (the key trend, §6). Weekly volume vs
-   the recent multi-week average — watch for sharp load spikes. Intensity distribution
-   (~80/20).
+4. **Screen readiness & red flags (`AGENTS.md §7`):**
+   - Elevated RHR (>3–5 bpm above baseline) or depressed/unbalanced HRV.
+   - Poor sleep stacked over 2+ consecutive nights.
+   - Subjective RPE drifting up at easy paces.
+   - Any tendon/joint pain or altered gait → triggers immediate load reduction or rest.
 
-5. **Wellness & red flags (§8).** Use the wellness context provided in conversation.
-   Resting HR / HRV / sleep trend across the week. Decide whether a back-off or
-   recovery week is due (roughly every 3–4 weeks).
+5. **Synthesize the week's assessment:**
+   - Summarize execution vs plan (completed vs planned distance and key workouts).
+   - Evaluate intensity distribution (~80% easy/recovery, ~20% quality).
+   - Formulate a clear, direct coaching assessment in Ukrainian.
 
-6. **Write the review.** `reviews/YYYY-MM-DD.md` — lead with the assessment, then the
-   evidence. Keep it honest; "life blew up" weeks are the most valuable to record.
+6. **Commit next week's prescription:**
+   - Formulate the binding plan for next week in `plan/current-week.md`.
+   - Use the standard date-keyed table format:
+     `Date | Type | Distance | Target pace | Target HR | Purpose`
+   - Include clear weekly ceiling, conditions, and purpose for every session. Ensure target paces and HR match `athlete.md`.
 
-7. **Commit next week.** Re-check the upcoming week against the latest fitness/wellness,
-   pull from the provisional calendar if one exists, then write the binding
-   `plan/current-week.md` as a date-keyed table:
-   `date | type | distance | target pace | target HR | purpose` (§10 — every session
-   states its purpose).
+7. **Invoke `verify-week` (Mandatory):**
+   - Run `verify-week` immediately after writing `plan/current-week.md`.
+   - Do not consider the week committed until `verify-week` reports a clean pass (or any flagged discrepancies are resolved with the athlete).
 
-8. **Invoke `verify-week`.** Mandatory, immediately after step 7. Do not consider the
-   week committed until it reports a clean pass (or the athlete has confirmed the
-   fixes it proposed).
+## Communication
+- Present findings and the plan in **Ukrainian**.
+- Lead with the core assessment, follow with the data-backed rationale, and conclude with the clear weekly prescription.
 
 ## May write
-`plan/current-week.md`, `reviews/YYYY-MM-DD.md`.
-
-Do not revise the master plan or pace zones here — that is `phase-review`.
+- `plan/current-week.md`
+- Optional summary/review notes if requested.

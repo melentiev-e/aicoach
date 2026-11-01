@@ -5,52 +5,40 @@ description: Use monthly to produce a read-only narrative wrap-up of the calenda
 
 # Monthly summary
 
-A read-only progress narrative for the calendar month. It reports; it never decides or
-edits the plan (that is `phase-review`).
+A read-only narrative progress review for the calendar month. It synthesizes execution trends and recovery patterns; it never edits the plan (any macrocycle or zone adjustments belong to `phase-review`).
 
 ## Read first
-- `CLAUDE.md` §9 (what to track).
-- All activity files in `logs/activities/` for the month.
-- The month's `reviews/` files for context on what happened and why.
+- `AGENTS.md` (§5 Training Methodology, §6 Evaluation Framework).
+- `athlete.md` (Current Pace & HR zones, physiological baseline).
+- Completed weekly reviews and activities for the target month.
 
-## Required interview — before coaching decisions
-
-Follow [CLAUDE.md §7.1](../../../CLAUDE.md#71-required-coaching-interview): read
-existing context, ask focused follow-ups, and **wait for answers** before dependent
-recommendations or writes. Current answers already supplied satisfy the interview;
-read-only data inspection may continue while waiting.
-
-Resolve activity coverage/date ambiguities, then ask about missing monthly context:
-fatigue/sleep/mood trends, niggles/illness, disruptions or unlogged load, personal
-wins/concerns and available fitness trends. Reuse weekly interviews. Complete this
-interview before the final narrative; if subjective information is explicitly
-unavailable, label that gap and keep conclusions limited to recorded evidence.
+## Athlete check-in (focused)
+Ask for high-level monthly context if not already documented:
+1. Overall monthly recovery feel, sleep quality, or life stress patterns.
+2. Any niggles, injury concerns, or illnesses during the month.
+3. Personal reflections, wins, or anxieties about progression.
 
 ## Steps
 
-1. **Identify the month's activities.** List files in `logs/activities/` and ask the
-   athlete to confirm which ones belong to the month (with dates), if not already known
-   from prior weekly reviews. Derive summaries from the lap data (§6).
+1. **Synthesize monthly activities:**
+   - Retrieve the month's runs via **Garmin API** (primary) or **Strava API** (`strava-activities`).
+   - Calculate total monthly distance, session count, long run progression, and consistency.
 
-2. **Volume & consistency.** Monthly distance (sum across all activities), session
-   count, long-run progression, sessions completed vs planned, disruptions.
+2. **Evaluate intensity distribution:**
+   - Review time and mileage spent across zones (Easy/Recovery vs Threshold/MP/VO2max).
+   - Check adherence to the ~80/20 intensity target.
 
-3. **Intensity.** Distribution across zones (from lap HR/pace data), key workout paces
-   hit, MP-work progress.
+3. **Assess physiological & aerobic trends:**
+   - Evaluate Pace-at-HR progression across the month (has aerobic efficiency improved at easy/threshold paces?).
+   - Review monthly resting HR and overnight HRV trends from Garmin.
 
-4. **Physiological trends.** Pace-at-HR across the month — is aerobic efficiency
-   improving? Ask the athlete for any RUNALYZE/Garmin fitness trend numbers if
-   available (VO2max trend, CTL/ATL, prognosis vs 2:39).
+4. **Identify wins & concerns:**
+   - Highlight key developmental milestones (e.g. consistent volume, solid threshold reps, healthy tendons).
+   - Flag emerging limiters or signs of accumulated fatigue/strain.
 
-5. **Subjective & health.** Ask the athlete for a brief wellness summary of the month:
-   sleep, fatigue/mood patterns, niggles, illness. Use what was already shared in the
-   weekly reviews.
-
-6. **Wins & concerns.** Lead with the honest headline: is the athlete trending toward
-   the goal? Call out what's working and what to watch. Tie every claim to data.
-
-7. **Write** `reviews/YYYY-MM-summary.md`. If the data suggests a plan change, *flag
-   it* and recommend running `phase-review` — do not make the change here.
+5. **Generate narrative review:**
+   - Deliver an honest, structured narrative review in **Ukrainian**.
+   - If the summary reveals a need to revise macrocycle targets or recalibrate pace zones, recommend initiating a `phase-review`.
 
 ## May write
-`reviews/YYYY-MM-summary.md` only. Read-only with respect to the plan.
+- `reviews/YYYY-MM-summary.md` (optional report storage). Read-only with respect to training plans.
